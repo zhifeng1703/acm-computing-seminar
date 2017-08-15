@@ -7,6 +7,7 @@ This is the repository for the ACM computing seminar webpage and associate resou
 - Matt Hancock
 - Joe Mckenna
 - Zhifeng Deng
+- Test
 
 ## License
 
