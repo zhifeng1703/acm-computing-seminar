@@ -1,5 +1,5 @@
-#+title: MAT5939-03 ACM Computing Seminar – Fall 2016
-#+name: Matt Hancock
+#+title: MAT5939-03 ACM Computing Seminar – Fall 2017
+#+name: Zhifeng Deng
 #+options: html-postamble:nil toc:nil name:nil
 #+options: H:1 num:0
 #+html_head: <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -7,11 +7,11 @@
 
 * Course Information 
 
-| *Time & Place:* | Monday 6:45PM - 8:00PM, LOV 102                   |
-| *Instructor:*   | Matt Hancock                                      |
-| *Office Hours:* | Tues 12-2, Thurs 2-4, 409 B MCH                   |
-| *Email:*        | [[mailto:mhancock@math.fsu.edu?subject=MAT5939 ... ][mhancock@math.fsu.edu]]                             |
-| *Website:*      | [[./][www.math.fsu.edu/~mhancock/acm-computing-seminar/]] |
+| *Time & Place:* | TBA                                               |
+| *Instructor:*   | Zhifeng Deng                                      |
+| *Office Hours:* | Tues/Thurs 12-1:30                                |
+| *Email:*        | [[mailto:zdeng@math.fsu.edu?subject=MAT5939 ... ][zdeng@math.fsu.edu]]                                |
+| *Website:*      | [[./][www.math.fsu.edu/~zdeng/acm-computing-seminar/]]    |
 
 * Course Objectives
 
