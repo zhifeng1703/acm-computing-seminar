@@ -8,10 +8,10 @@
 #+html: <div id="main">
 
 * Course Information [[./syllabus.html][(syllabus)]]
-| *Time & Place:* | TBA                             |
-| *Instructor:*   | Zhifeng Deng                    |
-| *Office Hours:* | TBA                             |
-| *Email:*        | [[mailto:zdeng@math.fsu.edu?subject=MAT5939 ... ][zdeng@math.fsu.edu]]              |
+| *Time & Place:* | TBA                |
+| *Instructor:*   | Zhifeng Deng       |
+| *Office Hours:* | TBA                |
+| *Email:*        | [[mailto:zdeng@math.fsu.edu?subject=MAT5939 ... ][zdeng@math.fsu.edu]] |
 * Resources
 ** Programming Language Guides
 + [[./resources/langs/cpp/][C++ guide]] ([[./resources/langs/cpp/index.pdf][pdf]])
