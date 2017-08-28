@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>MAT5939-03 ACM Computing Seminar – Fall 2017</title>
-<!-- 2017-08-28 Mon 10:26 -->
+<!-- 2017-08-29 Tue 05:08 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="DESKTOP-7VT5JI9" />
@@ -135,6 +135,48 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
 </head>
 <body>
 <div id="content">
@@ -259,13 +301,27 @@ Graduate standing in mathematics.
 <h2 id="sec-5">Grade Policy:</h2>
 <div class="outline-text-2" id="text-5">
 <p>
-Homework is assigned weekly. Homework is graded on a 0 – 3 scale:
+Homework is assigned weekly and counts for 50% of your final grade.
+</p>
+
+<p>
+4 comprehensive programs will be released in the second week and they count for
+the other 50% of your grade. You can submit your programs anytime before the seminar
+ends.
+</p>
+
+<p>
+Your final grade will be \((Average(HW)+Average(Programs)/2)\)
+</p>
+
+<p>
+Homework and programs are graded on a 0 – 3 scale:
 </p>
 
 <ul class="org-ul">
-<li>0 - no homework submitted or code copied from another source
+<li>0 - no result submitted or code copied from another source
 </li>
-<li>1 - homework submitted, but did not demonstrate code functions properly
+<li>1 - result submitted, but did not demonstrate code functions properly
 </li>
 <li>2 - showed code functions properly, but results not fully explained
 </li>
@@ -274,9 +330,21 @@ Homework is assigned weekly. Homework is graded on a 0 – 3 scale:
 </ul>
 
 <p>
-To earn a grade of S, you must average a 2 or higher across all the homeworks. 
-For each homework assignment you will hand in a hard-copy report and e-mail me 
-your source code. When e-mailing, please include [MAT5939] in the subject line 
+To earn a grade of S, you must have final grade greater or equal to 2. 
+</p>
+
+<p>
+For each homework or program assignment you will hand in a hard-copy report and e-mail me 
+your source code. 
+</p>
+
+<p>
+For each program assignment, you are expected to come to my office and run your code with different
+inputs.
+</p>
+
+<p>
+When e-mailing, please include [MAT5939] in the subject line 
 of the email.
 </p>
 </div>

@@ -44,16 +44,30 @@ Graduate standing in mathematics.
 
 * Grade Policy:
 
-Homework is assigned weekly. Homework is graded on a 0 – 3 scale:
+Homework is assigned weekly and counts for 50% of your final grade.
 
-    + 0 - no homework submitted or code copied from another source
-    + 1 - homework submitted, but did not demonstrate code functions properly
+4 comprehensive programs will be released in the second week and they count for
+the other 50% of your grade. You can submit your programs anytime before the seminar
+ends.
+
+Your final grade will be $(Average(HW)+Average(Programs)/2)$
+
+Homework and programs are graded on a 0 – 3 scale:
+
+    + 0 - no result submitted or code copied from another source
+    + 1 - result submitted, but did not demonstrate code functions properly
     + 2 - showed code functions properly, but results not fully explained
     + 3 - showed code functions properly, presented results clearly and fully
 
-To earn a grade of S, you must average a 2 or higher across all the homeworks. 
-For each homework assignment you will hand in a hard-copy report and e-mail me 
-your source code. When e-mailing, please include [MAT5939] in the subject line 
+To earn a grade of S, you must have final grade greater or equal to 2. 
+
+For each homework or program assignment you will hand in a hard-copy report and e-mail me 
+your source code. 
+
+For each program assignment, you are expected to come to my office and run your code with different
+inputs.
+
+When e-mailing, please include [MAT5939] in the subject line 
 of the email.
 
 * Homework Policy

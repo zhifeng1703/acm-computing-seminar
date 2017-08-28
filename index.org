@@ -21,29 +21,19 @@
 + [[./resources/prog/example-assignment.zip][Example programming assignment and solution]]
 * Assignments
 
-|--------------------+----------------------------------------------|
-| Week               | Assignment                                   |
-| <c>                |                                              |
-|--------------------+----------------------------------------------|
-| 1 <2017-08-28 Mon> | Install C++ environment(Visual Studio/ g++); |
-|                    |                                              |
-|                    | 1. Create and compile Helloworld.cpp;        |
-|                    |                                              |
-|                    | 2. Create int type variables                 |
-|                    |                                              |
-|                    | ~int a=1, b=2, c~                            |
-|                    |                                              |
-|                    | Output the values of                         |
-|                    |                                              |
-|                    | ~a+b, a*b, a/b, c~                           |
-|                    |                                              |
-|                    | 3. Create double type variables              |
-|                    |                                              |
-|                    | ~double d=1.2, e=0.6, f~                     |
-|                    |                                              |
-|                    | Output the values of                         |
-|                    |                                              |
-|                    | ~d+e, d*e, d/e f~                            |
-|--------------------+----------------------------------------------|
+|--------------------+----------------------------------------------------------|
+| Week               | Assignment                                               |
+| <c>                |                                                          |
+|--------------------+----------------------------------------------------------|
+| 1 <2017-08-28 Mon> | 1. Read the Programming assignment resources carefully.  |
+|                    |                                                          |
+|                    | 2. Install g++/gcc or other compiler you prefer,         |
+|                    | create and compile helloworld.cpp.                       |
+|                    |                                                          |
+|                    | 3. Try basic operations on int and double variables.     |
+|                    | (Uninitialized variable, division on int variables and   |
+|                    | casting double to int might have interesting outcomes,   |
+|                    | feel free to explore more.)                              |
+|--------------------+----------------------------------------------------------|
 
 #+html: </div>
