@@ -7,9 +7,9 @@
 
 * Course Information 
 
-| *Time & Place:* | TBA                                               |
+| *Time & Place:* | Monday 18:45-20:00, LOV 102                       |
 | *Instructor:*   | Zhifeng Deng                                      |
-| *Office Hours:* | Tues/Thurs 12-1:30                                |
+| *Office Hours:* | Tues/Thurs 12:00-13:30 or by appointment          |
 | *Email:*        | [[mailto:zdeng@math.fsu.edu?subject=MAT5939 ... ][zdeng@math.fsu.edu]]                                |
 | *Website:*      | [[./][www.math.fsu.edu/~zdeng/acm-computing-seminar/]]    |
 

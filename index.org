@@ -8,10 +8,10 @@
 #+html: <div id="main">
 
 * Course Information [[./syllabus.html][(syllabus)]]
-| *Time & Place:* | TBA                |
-| *Instructor:*   | Zhifeng Deng       |
-| *Office Hours:* | TBA                |
-| *Email:*        | [[mailto:zdeng@math.fsu.edu?subject=MAT5939 ... ][zdeng@math.fsu.edu]] |
+| *Time & Place:* | Monday 18:45-20:00, LOV 102              |
+| *Instructor:*   | Zhifeng Deng                             |
+| *Office Hours:* | Tues/Thurs 12:00-13:30 or by appointment |
+| *Email:*        | [[mailto:zdeng@math.fsu.edu?subject=MAT5939 ... ][zdeng@math.fsu.edu]]                       |
 * Resources
 ** Programming Language Guides
 + [[./resources/langs/cpp/][C++ guide]] ([[./resources/langs/cpp/index.pdf][pdf]])
@@ -21,11 +21,29 @@
 + [[./resources/prog/example-assignment.zip][Example programming assignment and solution]]
 * Assignments
 
-|--------------------+-------------------------------------------------------|
-| Week               | Assignment                                            |
-| <c>                |                                                       |
-|--------------------+-------------------------------------------------------|
-| 1 TBA              | Install gcc / g++; write and compile "hello world".   |
-|--------------------+-------------------------------------------------------|
+|--------------------+----------------------------------------------|
+| Week               | Assignment                                   |
+| <c>                |                                              |
+|--------------------+----------------------------------------------|
+| 1 <2017-08-28 Mon> | Install C++ environment(Visual Studio/ g++); |
+|                    |                                              |
+|                    | 1. Create and compile "Hello, world!";       |
+|                    |                                              |
+|                    | 2. Create int type variables                 |
+|                    |                                              |
+|                    | ~int a=1, b=2, c~                            |
+|                    |                                              |
+|                    | Output the values of                         |
+|                    |                                              |
+|                    | ~a+b, a*b, a/b, c~                           |
+|                    |                                              |
+|                    | 3. Create double type variables              |
+|                    |                                              |
+|                    | ~double d=1.2, e=0.6, f~                     |
+|                    |                                              |
+|                    | Output the values of                         |
+|                    |                                              |
+|                    | ~d+e, d*e, d/e f~                            |
+|--------------------+----------------------------------------------|
 
 #+html: </div>
