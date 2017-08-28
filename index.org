@@ -27,7 +27,7 @@
 |--------------------+----------------------------------------------|
 | 1 <2017-08-28 Mon> | Install C++ environment(Visual Studio/ g++); |
 |                    |                                              |
-|                    | 1. Create and compile "Hello, world!";       |
+|                    | 1. Create and compile Helloworld.cpp;        |
 |                    |                                              |
 |                    | 2. Create int type variables                 |
 |                    |                                              |
