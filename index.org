@@ -19,21 +19,20 @@
 ** Programming assignment resources
 + [[./resources/prog/assignment-template.zip][Programming assignment template]] (Read the README!)
 + [[./resources/prog/example-assignment.zip][Example programming assignment and solution]]
+** Programming environment setup
++ [[./Linux.txt][Setup Windows Subsystem of Linux]]
+Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-subsystem-for-linux][Setup Subsystem]], [[https://solarianprogrammer.com/2017/04/16/windows-susbsystem-for-linux-xfce-4][Setup GUI]]
 * Assignments
 
-|--------------------+----------------------------------------------------------|
-| Week               | Assignment                                               |
-| <c>                |                                                          |
-|--------------------+----------------------------------------------------------|
-| 1 <2017-08-28 Mon> | 1. Read the Programming assignment resources carefully.  |
-|                    |                                                          |
-|                    | 2. Install g++/gcc or other compiler you prefer,         |
-|                    | create and compile helloworld.cpp.                       |
-|                    |                                                          |
-|                    | 3. Try basic operations on int and double variables.     |
-|                    | (Uninitialized variable, division on int variables and   |
-|                    | casting double to int might have interesting outcomes,   |
-|                    | feel free to explore more.)                              |
-|--------------------+----------------------------------------------------------|
+|--------------------+---------------------------------------------------------|
+| Week               | Assignment                                              |
+| <c>                |                                                         |
+|--------------------+---------------------------------------------------------|
+| 1 <2017-08-28 Mon> | 1. Read the Programming assignment resources carefully. |
+|                    |                                                         |
+|                    | 2. Install g++ or other compiler you prefer,            |
+|                    | create and compile helloworld.cpp.                      |
+|                    |                                                         |
+|--------------------+---------------------------------------------------------|
 
 #+html: </div>
