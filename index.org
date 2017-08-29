@@ -20,7 +20,7 @@
 + [[./resources/prog/assignment-template.zip][Programming assignment template]] (Read the README!)
 + [[./resources/prog/example-assignment.zip][Example programming assignment and solution]]
 ** Programming environment setup
-+ [[./Linux.txt][Setup Windows Subsystem of Linux]]
++ [[./Linux.txt][Setup Windows Subsystem for Linux]]
 Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-subsystem-for-linux][Setup Subsystem]], [[https://solarianprogrammer.com/2017/04/16/windows-susbsystem-for-linux-xfce-4][Setup GUI]]
 * Assignments
 
@@ -35,4 +35,15 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 |                    |                                                         |
 |--------------------+---------------------------------------------------------|
 
+* Anouncements
+
+|------------------+----------------------------------------------------------|
+| Date             | Announcement                                             |
+|------------------+----------------------------------------------------------|
+| <2017-08-29 Tue> | I will hold my office hours at MCH 112 today.            |
+|                  | It is extented to 3:00 pm, feel free to come if you need |
+|                  | my help to setup your coding environment.                |
+|------------------+----------------------------------------------------------|
+
 #+html: </div>
+
