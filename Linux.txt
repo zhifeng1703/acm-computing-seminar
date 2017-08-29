@@ -19,6 +19,7 @@ Step 3(After restarted):
 Step 4(Install xfce4):
 - type "sudo apt install xfce4" and then press "Enter".(You may need to input your password.)
 - type "sudo apt install xfce4-session" and then press "Enter".
+- There might be a warning message says you need to update some packages. If so, type " sudo apt-get update".
 - type "nano ~/.bashrc" and then press "Enter".
 --- Add a line at the end of the file: "export DISPLAY=:0.0".
 --- Press "Ctrl+X" (Close the file).
