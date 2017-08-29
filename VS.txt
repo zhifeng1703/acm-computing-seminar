@@ -1,0 +1,5 @@
+Step 1:
+- Open "Visual Studio".
+- Create "New Project"
+- On the right-hand side of the dialog, Find "can't ..." under Template
+- Install C++
