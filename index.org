@@ -45,6 +45,10 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 |                  | done before.                                               |
 |                  |                                                            |
 |------------------+------------------------------------------------------------|
+| <2017-08-31 Thu> | I will hold my office hour at MCH 112 today.               |
+|------------------+------------------------------------------------------------|
 
 #+html: </div>
+
+
 
