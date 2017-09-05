@@ -37,16 +37,17 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 
 * Anouncements
 
-|------------------+------------------------------------------------------------|
-| Date             | Announcement                                               |
-|------------------+------------------------------------------------------------|
-| <2017-08-31 Thu> | Stop by my office during my office hour or by appointment. |
-|                  | We will have a short conversation about the code you have  |
-|                  | done before.                                               |
-|                  |                                                            |
-|------------------+------------------------------------------------------------|
-| <2017-08-31 Thu> | I will hold my office hour at MCH 112 today.               |
-|------------------+------------------------------------------------------------|
+|------------------+--------------------------------------------------------------|
+| Date             | Announcement                                                 |
+|------------------+--------------------------------------------------------------|
+| <2017-08-31 Thu> | Stop by my office during my office hour or by appointment.   |
+|                  | We will have a short conversation about the code you have    |
+|                  | done before.                                                 |
+|                  |                                                              |
+|------------------+--------------------------------------------------------------|
+| <2017-09-05 Tue> | I will hold my office hour at MCH 404/6B today and later on. |
+|                  |                                                              |
+|------------------+--------------------------------------------------------------|
 
 #+html: </div>
 
