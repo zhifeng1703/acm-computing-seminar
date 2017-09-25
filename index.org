@@ -24,26 +24,41 @@
 Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-subsystem-for-linux][Setup Subsystem]], [[https://solarianprogrammer.com/2017/04/16/windows-susbsystem-for-linux-xfce-4][Setup GUI]]
 * Assignments
 
-|--------------------+---------------------------------------------------------|
-| Week               | Assignment                                              |
-| <c>                |                                                         |
-|--------------------+---------------------------------------------------------|
-| 1 <2017-08-28 Mon> | 1. Read the Programming assignment resources carefully. |
-|                    |                                                         |
-|                    | 2. Install g++ or other compiler you prefer,            |
-|                    | create and compile helloworld.cpp.                      |
-|                    |                                                         |
-|--------------------+---------------------------------------------------------|
-| 2 <2017-09-18 Mon> | Compute the value of the truncated sum,                 |
-|                    | $s_N = \sum_{n=1}^N \frac{1}{n^2}$                      |
-|                    | and the absolute error,                                 |
-|                    | $e_N = \vert{}\frac{\pi^2}{6} - s_N\vert{}$             |
-|                    | while $e_N > 10^{-4}$. For each iteration, print        |
-|                    | $N$, $e_N$                                              |
-|                    | if $N$ is a mutiple of $100$.                           |
-|--------------------+---------------------------------------------------------|
-
-
+|--------------------+----------------------------------------------------------------|
+| Week               | Assignment                                                     |
+| <c>                |                                                                |
+|--------------------+----------------------------------------------------------------|
+| 1 <2017-08-28 Mon> | 1. Read the Programming assignment resources carefully.        |
+|                    |                                                                |
+|                    | 2. Install g++ or other compiler you prefer,                   |
+|                    | create and compile helloworld.cpp.                             |
+|                    |                                                                |
+|--------------------+----------------------------------------------------------------|
+| 2 <2017-09-18 Mon> | Compute the value of the truncated sum,                        |
+|                    | $s_N = \sum_{n=1}^N \frac{1}{n^2}$                             |
+|                    | and the absolute error,                                        |
+|                    | $e_N = \vert{}\frac{\pi^2}{6} - s_N\vert{}$                    |
+|                    | while $e_N > 10^{-4}$. For each iteration, print               |
+|                    | $N$, $e_N$                                                     |
+|                    | if $N$ is a mutiple of $100$.                                  |
+|--------------------+----------------------------------------------------------------|
+| 3 <2017-09-25 Mon> | Consider the function $$f(x)=3x^2-x^3$$ on $0<=x<=3$.          |
+|                    | Write functions to generate different uniform grid points and  |
+|                    | approximate the definite integral using [[https://en.wikipedia.org/wiki/Trapezoidal_rule][trapezoidal rule]].      |
+|                    | For each grid, output the stepsize $h$ and the absolute error. |
+|                    | Verify that error has second order of convergence with respect |
+|                    | to $h$, i.e. $error \sim h^2$.                                 |
+|                    |                                                                |
+|                    | The file [[./rescourses/data/x.txt][x.txt]] contains a nonuniform grid. Write               |
+|                    | functions to read the file and approximate the intergal again. |
+|                    | Compare this result to the uniform grid. Does it still fit the |
+|                    | pattern? Is it still bounded?                                  |
+|                    |                                                                |
+|                    | Note: 1. Error in trapezodial rule has the bound of the form:  |
+|                    | $$\frac{(b-a)^3 \vert{}f''(\xi)\vert{}}{(12 N^2)} $$           |
+|                    | 2. For nonuniform grid, one could consider                     |
+|                    | $$h=\max\limits_i \{\Delta x_i\}$$                             |
+|--------------------+----------------------------------------------------------------|
 * Anouncements
 
 |------------------+--------------------------------------------------------------|
