@@ -42,21 +42,21 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 |                    | $N$, $e_N$                                                     |
 |                    | if $N$ is a mutiple of $100$.                                  |
 |--------------------+----------------------------------------------------------------|
-| 3 <2017-09-25 Mon> | Consider the function $$f(x)=3x^2-x^3$$ on $0<=x<=3$.          |
+| 3 <2017-09-25 Mon> | Consider the function $$f(x)=3x^2-x^3$$ on $0\leq x \leq 3$.   |
 |                    | Write functions to generate different uniform grid points and  |
 |                    | approximate the definite integral using [[https://en.wikipedia.org/wiki/Trapezoidal_rule][trapezoidal rule]].      |
 |                    | For each grid, output the stepsize $h$ and the absolute error. |
 |                    | Verify that error has second order of convergence with respect |
 |                    | to $h$, i.e. $error \sim h^2$.                                 |
 |                    |                                                                |
-|                    | The file [[./rescourses/data/x.txt][x.txt]] contains a nonuniform grid. Write               |
+|                    | The file [[./resources/data/x.txt][x.txt]] contains a nonuniform grid. Write               |
 |                    | functions to read the file and approximate the intergal again. |
 |                    | Compare this result to the uniform grid. Does it still fit the |
 |                    | pattern? Is it still bounded?                                  |
 |                    |                                                                |
 |                    | Note: 1. Error in trapezodial rule has the bound of the form:  |
 |                    | $$\frac{(b-a)^3 \vert{}f''(\xi)\vert{}}{(12 N^2)} $$           |
-|                    | 2. For nonuniform grid, one could consider                     |
+|                    | 2. For nonuniform grid, you could consider                     |
 |                    | $$h=\max\limits_i \{\Delta x_i\}$$                             |
 |--------------------+----------------------------------------------------------------|
 * Anouncements
@@ -72,6 +72,14 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 | <2017-09-05 Tue> | I will hold my office hour at MCH 404/6B today and later on. |
 |                  |                                                              |
 |------------------+--------------------------------------------------------------|
+| <2017-09-25 Mon> | The file ~x.txt~ in assignment 3 is fixed. For the reading   |
+|                  | data parts in assignment 3, you can read the data and count  |
+|                  | the numbers of elements. Then, create a dynamic array and    |
+|                  | read it again. Or you could use =vector= and take advantage  |
+|                  | of [[http://www.cplusplus.com/reference/vector/vector/push_back/][=vector::push_back=]]                                       |
+|                  |                                                              |
+|------------------+--------------------------------------------------------------|
+
 
 #+html: </div>
 
