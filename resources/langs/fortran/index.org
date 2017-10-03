@@ -14,6 +14,8 @@
 #+html: <div id="footer"><a href="../../../">ACM Computing Seminar Home</a> &mdash; This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.</div>
 #+html: <a href="javascript:;" id="toc-open">&#9776;</a>
 #+html: <a href="javascript:;" id="toc-close">&times;</a>
+#+html_mathjax: path:"https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=Tex-AMS-MML_HTMLorMML"
+
 
 * Introduction
 This guide is intended to quickly get you up-and-running in scientific computing with Fortran. 
