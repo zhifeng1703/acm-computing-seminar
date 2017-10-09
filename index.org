@@ -63,6 +63,29 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 |                       | maybe into a header file. No report or source code is needed.  |
 |                       | When you are doing the FCM program, use function.              |
 |-----------------------+----------------------------------------------------------------|
+| 4 <2017-10-09 Mon>    | Add a member function, =norm=, to the vector class             |
+|                       | discussed in the C++ guide. The function should                |
+|                       | have the signature:                                            |
+|                       |                                                                |
+|                       | ~double norm(double p);~                                       |
+|                       |                                                                |
+|                       | and should implement the [[https://en.wikipedia.org/wiki/Norm_(mathematics)#p-norm][vector p-norm]]. The function           |
+|                       | would be then called like:                                     |
+|                       |                                                                |
+|                       | ~x.norm(1.53);~                                                |
+|                       |                                                                |
+|                       | where ~x~ is a vector object. Write a test script              |
+|                       | that loops through values of ~p=1, 1.1, ..., 1.9, 2~           |
+|                       | and for each value of ~p~, prints the average p-norm           |
+|                       | of 100 vectors of length 10 whose components are               |
+|                       | uniform random on [0,1] (see the C++ guide section             |
+|                       | on generating random numbers).                                 |
+|                       |                                                                |
+|                       | No report is needed for this assignment, just send             |
+|                       | me your code and result via email or show me in class.         |
+|-----------------------+----------------------------------------------------------------|
+
+
 * Anouncements
 
 |------------------+--------------------------------------------------------------|
