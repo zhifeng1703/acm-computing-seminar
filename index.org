@@ -84,7 +84,10 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 |                       | No report is needed for this assignment, just send             |
 |                       | me your code and result via email or show me in class.         |
 |-----------------------+----------------------------------------------------------------|
-
+| 5 <2017-10-17 Tue>    | Overload the binary operator ~==~ to implement the comparison  |
+|                       | for your vector class. Two vectors are consider the same if    |
+|                       | the two norm of their difference is less than $10^-10$.        |
+|-----------------------+----------------------------------------------------------------|
 
 * Anouncements
 
