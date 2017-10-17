@@ -5,6 +5,7 @@
 #+options: with-fixed-width:yes
 #+html_head: <link rel="stylesheet" type="text/css" href="css/main.css">
 #+html: <div id="main">
+#+html_mathjax: path:"https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=Tex-AMS-MML_HTMLorMML"
 
 * Course Information [[./syllabus.html][(syllabus)]]
 | *Time & Place:* | Monday 18:45-20:00, LOV 102              |
