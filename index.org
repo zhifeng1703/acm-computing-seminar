@@ -1,4 +1,4 @@
-#+title: MAT5939-03 ACM Computing Seminar – Fall 2017
+#+title: MAT5939-03 ACM Computing Seminar – Fall 2018
 #+name: Zhifeng Deng
 #+options: html-postamble:nil toc:nil name:nil
 #+options: H:3 num:0
@@ -10,7 +10,7 @@
 * Course Information [[./syllabus.html][(syllabus)]]
 | *Time & Place:* | Monday 18:45-20:00, LOV 102              |
 | *Instructor:*   | Zhifeng Deng                             |
-| *Office Hours:* | Tues/Thurs 12:00-13:30 or by appointment |
+| *Office Hours:* | Tues/Thurs 10:30-12:00 or by appointment |
 | *Email:*        | [[mailto:zdeng@math.fsu.edu?subject=MAT5939 ... ][zdeng@math.fsu.edu]]                       |
 * Resources
 ** Programming Language Guides
@@ -34,126 +34,13 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 |                       | create and compile helloworld.cpp.                               |
 |                       |                                                                  |
 |-----------------------+------------------------------------------------------------------|
-| 2 <2017-09-18 Mon>    | Compute the value of the truncated sum,                          |
-|                       | $s_N = \sum_{n=1}^N \frac{1}{n^2}$                               |
-|                       | and the absolute error,                                          |
-|                       | $e_N = \vert{}\frac{\pi^2}{6} - s_N\vert{}$                      |
-|                       | while $e_N > 10^{-4}$. For each iteration, print                 |
-|                       | $N$, $e_N$                                                       |
-|                       | if $N$ is a mutiple of $100$.                                    |
-|-----------------------+------------------------------------------------------------------|
-| 3 <2017-09-25 Mon>    | Consider the function $$f(x)=3x^2-x^3$$ on $0\leq x \leq 3$.     |
-|                       | Write functions to generate different uniform grid points and    |
-|                       | approximate the definite integral using [[https://en.wikipedia.org/wiki/Trapezoidal_rule][trapezoidal rule]].        |
-|                       | For each grid, output the stepsize $h$ and the absolute error.   |
-|                       | Verify that error has second order of convergence with respect   |
-|                       | to $h$, i.e. $error \sim h^2$.                                   |
-|                       |                                                                  |
-|                       | The file [[./resources/data/x.txt][x.txt]] contains a nonuniform grid. Write                 |
-|                       | functions to read the file and approximate the intergal again.   |
-|                       | Compare this result to the uniform grid. Does it still fit the   |
-|                       | pattern? Is it still bounded?                                    |
-|                       |                                                                  |
-|                       | Note: 1. Error in trapezodial rule has the bound of the form:    |
-|                       | $$\frac{(b-a)^3 \vert{}f''(\xi)\vert{}}{(12 N^2)} $$             |
-|                       | 2. For nonuniform grid, you could consider                       |
-|                       | $$h=\max\limits_i \{\Delta x_i\}$$                               |
-|-----------------------+------------------------------------------------------------------|
-| None <2017-10-02 Mon> | Not a particular assignment for the seminar this week. You can   |
-|                       | warp your pervious trapezodial rule code into a function and     |
-|                       | maybe into a header file. No report or source code is needed.    |
-|                       | When you are doing the FCM program, use function.                |
-|-----------------------+------------------------------------------------------------------|
-| 4 <2017-10-09 Mon>    | Add a member function, =norm=, to the vector class               |
-|                       | discussed in the C++ guide. The function should                  |
-|                       | have the signature:                                              |
-|                       |                                                                  |
-|                       | ~double norm(double p);~                                         |
-|                       |                                                                  |
-|                       | and should implement the [[https://en.wikipedia.org/wiki/Norm_(mathematics)#p-norm][vector p-norm]]. The function             |
-|                       | would be then called like:                                       |
-|                       |                                                                  |
-|                       | ~x.norm(1.53);~                                                  |
-|                       |                                                                  |
-|                       | where ~x~ is a vector object. Write a test script                |
-|                       | that loops through values of ~p=1, 1.1, ..., 1.9, 2~             |
-|                       | and for each value of ~p~, prints the average p-norm             |
-|                       | of 100 vectors of length 10 whose components are                 |
-|                       | uniform random on [0,1] (see the C++ guide section               |
-|                       | on generating random numbers).                                   |
-|                       |                                                                  |
-|                       | No report is needed for this assignment, just send               |
-|                       | me your code and result via email or show me in class.           |
-|-----------------------+------------------------------------------------------------------|
-| 5 <2017-10-17 Tue>    | Overload the binary operator ~==~ to implement the comparison    |
-|                       | for your vector class. Two vectors are consider the same if      |
-|                       | the two norm of their difference is less than $10^{-10}$.        |
-|-----------------------+------------------------------------------------------------------|
-| 6 <2017-10-23 Mon>    | Comperhensive program. Write a class for [[https://en.wikipedia.org/wiki/Binary_search_tree][sorted binary tree]].     |
-|                       | The class contains the data structure to store a binary tree     |
-|                       | and the functions ~push_back(a)~, ~search(a)~ and ~print(i)~.    |
-|                       | ~push_back(a)~ will insert a new node with data ~a~ as leaf.     |
-|                       | ~search(a)~ check if ~a~ exists in the tree and return a bool    |
-|                       | value.                                                           |
-|                       | ~print(i)~ will print out the first $i^{th}$ layers of the tree. |
-|                       | When ~i~ is omitted, ~print()~ will print out the whole tree.    |
-|                       | Use * to represent the node does not exist.                      |
-|                       | Simple example:                                                  |
-|                       | A tree is constructed in the order of ~1,3,5,2,4~, the expected  |
-|                       | output of ~print()~ will be:                                     |
-|                       | 1                                                                |
-|                       | 3 5                                                              |
-|                       | 2 * 4 *                                                          |
-|                       | Note that the structure of the tree depends on the order of the  |
-|                       | inserted points.                                                 |
-|                       |                                                                  |
-|                       | In this assignment, we will set up meeting individually. You are |
-|                       | expected to read test data and output the tree. For complexity   |
-|                       | part, explain the storage of your class, show me the complexity  |
-|                       | under the best and the worst case in ~push_back~ and ~search~.   |
-|-----------------------+------------------------------------------------------------------|
 
 * Anouncements
 
 |------------------+----------------------------------------------------------------|
 | Date             | Announcement                                                   |
 |------------------+----------------------------------------------------------------|
-| <2017-08-31 Thu> | Stop by my office during my office hour or by appointment.     |
-|                  | We will have a short conversation about the code you have      |
-|                  | done before.                                                   |
-|                  |                                                                |
-|------------------+----------------------------------------------------------------|
-| <2017-09-05 Tue> | I will hold my office hour at MCH 404/6B today and later on.   |
-|                  |                                                                |
-|------------------+----------------------------------------------------------------|
-| <2017-09-25 Mon> | The file ~x.txt~ in assignment 3 is fixed. For the reading     |
-|                  | data parts in assignment 3, you can read the data and count    |
-|                  | the numbers of elements. Then, create a dynamic array and      |
-|                  | read it again. Or you could use =vector= and take advantage    |
-|                  | of [[http://www.cplusplus.com/reference/vector/vector/push_back/][=vector::push_back=]]                                         |
-|                  |                                                                |
-|------------------+----------------------------------------------------------------|
-| <2017-10-23 Mon> | IMPORTANT: Comperhensive program.                              |
-|                  | We will only have ONE comperhensive program for this semester. |
-|                  | The other three programs will be discussed in the seminar and  |
-|                  | will not be graded.                                            |
-|                  |                                                                |
-|                  | The final grade of this seminar will be the average over 5     |
-|                  | assignments and 1 comperhensive program.                       |
-|                  |                                                                |
-|                  | The programs we will talk in seminar are:                      |
-|                  |                                                                |
-|                  | 1. Compute weighted sums of different vectors after $k^{th}$   |
-|                  | steps in Markov chain transition and sort the initial vectors. |
-|                  | It is related to matrix vector multiplication and sorting;     |
-|                  |                                                                |
-|                  | 2. Find a [[https://en.wikipedia.org/wiki/Convex_hull][convex hull]] of given points on the plane. It is      |
-|                  | related to dynamic controling structure and implymenting       |
-|                  | complicated algorithm. We will use [[https://en.wikipedia.org/wiki/Graham_scan][Graham scan]];                |
-|                  |                                                                |
-|                  | 3. Find a [[https://en.wikipedia.org/wiki/Point_set_triangulation][triangulation]] of given points by finding the convex  |
-|                  | hull recursively.                                              |
-|------------------+----------------------------------------------------------------|
+
 
 
 #+html: </div>

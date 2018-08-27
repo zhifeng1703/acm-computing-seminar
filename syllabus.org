@@ -1,4 +1,4 @@
-cd#+title: MAT5939-03 ACM Computing Seminar – Fall 2017
+cd#+title: MAD5939-03 ACM Computing Seminar – Fall 2018
 #+name: Zhifeng Deng
 #+options: html-postamble:nil toc:nil name:nil
 #+options: H:1 num:0
@@ -9,7 +9,7 @@ cd#+title: MAT5939-03 ACM Computing Seminar – Fall 2017
 
 | *Time & Place:* | Monday 18:45-20:00, LOV 102                       |
 | *Instructor:*   | Zhifeng Deng                                      |
-| *Office Hours:* | Tues/Thurs 12:00-13:30 or by appointment          |
+| *Office Hours:* | Tues/Thurs 10:30-12:00 or by appointment          |
 | *Email:*        | [[mailto:zdeng@math.fsu.edu?subject=MAT5939 ... ][zdeng@math.fsu.edu]]                                |
 | *Website:*      | [[./][www.math.fsu.edu/~zdeng/acm-computing-seminar/]]    |
 
