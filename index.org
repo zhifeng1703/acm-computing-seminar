@@ -24,16 +24,16 @@
 Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-subsystem-for-linux][Setup Subsystem]], [[https://solarianprogrammer.com/2017/04/16/windows-susbsystem-for-linux-xfce-4][Setup GUI]]
 * Assignments
 
-|-----------------------+------------------------------------------------------------------|
-| Week                  | Assignment                                                       |
-| <c>                   |                                                                  |
-|-----------------------+------------------------------------------------------------------|
-| 1 <2017-08-28 Mon>    | 1. Read the Programming assignment resources carefully.          |
-|                       |                                                                  |
-|                       | 2. Install g++ or other compiler you prefer,                     |
-|                       | create and compile helloworld.cpp.                               |
-|                       |                                                                  |
-|-----------------------+------------------------------------------------------------------|
+|--------------------+---------------------------------------------------------|
+| Week               | Assignment                                              |
+| <c>                |                                                         |
+|--------------------+---------------------------------------------------------|
+| 1 <2018-08-27 Mon> | 1. Read the Programming assignment resources carefully. |
+|                    |                                                         |
+|                    | 2. Install g++ or other compiler you prefer,            |
+|                    | create and compile helloworld.cpp.                      |
+|                    |                                                         |
+|--------------------+---------------------------------------------------------|
 
 * Anouncements
 
