@@ -61,11 +61,9 @@ Homework and programs are graded on a 0 – 3 scale:
 
 To earn a grade of S, you must have final grade greater or equal to 2. 
 
-For each homework or program assignment you will hand in a hard-copy report and e-mail me 
-your source code. 
+For each homework or program assignment you will email me a report with your source code in the required format.
 
-For each program assignment, you are expected to come to my office and run your code with different
-inputs.
+For some program assignments, you may be expected to come to my office and run it.
 
 When e-mailing, please include [MAT5939] in the subject line 
 of the email.
