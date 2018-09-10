@@ -24,44 +24,38 @@
 Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-subsystem-for-linux][Setup Subsystem]], [[https://solarianprogrammer.com/2017/04/16/windows-susbsystem-for-linux-xfce-4][Setup GUI]]
 * Assignments
 
-|--------------------+---------------------------------------------------------|
-| Week               | Assignment                                              |
-| <c>                |                                                         |
-|--------------------+---------------------------------------------------------|
-| 1 <2018-08-27 Mon> | 1. Read the Programming assignment resources carefully. |
-|                    |                                                         |
-|                    | 2. Install g++ or other compiler you prefer,            |
-|                    | create and compile helloworld.cpp.                      |
-|                    |                                                         |
-|--------------------+---------------------------------------------------------|
-| 3 <2018-09-10 Mon> | [[https://en.wikipedia.org/wiki/Basel_problem][Basel problem]]                                           |
-|                    | Basel problem asks for the precise summation of the     |
-|                    | infinite series:                                        |
-|                    | $$\sum\limits_{n=1}^{\infty}\frac{1}{n^2}$$             |
-|                    | The answer is known as $\frac{\pi^2}{6}$                |
-|                    |                                                         |
-|                    | Now, consider the truncated sum                         |
-|                    | $$S_N=\sum\limits_{n=1}^{N} \frac{1}{n^2}$$             |
-|                    | and the remainder term $R_N=\frac{\pi^2}{6}-S_N$.       |
-|                    | Derive a bound for $R_N$ with respect to $N$            |
-|                    |                                                         |
-|                    | Write a code to compute $S_N,R_N$ with given $N$. Then  |
-|                    | pick 5 proper $N$ and run you code. Collect your result |
-|                    | and do a logplot with $(N,R_N)$. Make comments on the   |
-|                    | the bound you derived and the result from your code:    |
-|                    |                                                         |
-|                    | Is it a tight bound?                                    |
-|                    | Any comment on the order of the bound(power of $N$)?    |
-|                    |                                                         |
-|                    | Note: Feel free to use more than 5 $N$ if you can.      |
-|                    | For example, if you are familiar with output process    |
-|                    | to file, you can run your code iteratively and output   |
-|                    | all results to a file.                                  |
-|                    |                                                         |
-|                    | You may use any software for plotting.                  |
-|                    |                                                         |
-|                    | You may also plot your bound on the figure.             |
-|--------------------+---------------------------------------------------------|
+|--------------------+------------------------------------------------------------------------------------|
+| Week               | Assignment                                                                         |
+| <c>                |                                                                                    |
+|--------------------+------------------------------------------------------------------------------------|
+| 1 <2018-08-27 Mon> | 1. Read the Programming assignment resources carefully.                            |
+|                    |                                                                                    |
+|                    | 2. Install g++ or other compiler you prefer, create and compile helloworld.cpp.    |
+|--------------------+------------------------------------------------------------------------------------|
+| 3 <2018-09-10 Mon> | [[https://en.wikipedia.org/wiki/Basel_problem][Basel problem]]                                                                      |
+|                    | Basel problem asks for the precise summation of the infinite series:               |
+|                    | $$\sum\limits_{n=1}^{\infty}\frac{1}{n^2}$$                                        |
+|                    | The answer is known as $\frac{\pi^2}{6}$                                           |
+|                    |                                                                                    |
+|                    | Now, consider the truncated sum                                                    |
+|                    | $$S_N=\sum\limits_{n=1}^{N} \frac{1}{n^2}$$                                        |
+|                    | and the remainder term $R_N=\frac{\pi^2}{6}-S_N$. Derive a bound for $R_N$ of $N$  |
+|                    |                                                                                    |
+|                    | Write a code to compute $S_N,R_N$ with given $N$. Then pick 5 proper $N$ and run   |
+|                    | it. Collect your result and do a logplot with $(N,R_N)$. Make comments on the      |
+|                    | bound you derived and the result from your code:                                   |
+|                    |                                                                                    |
+|                    | Is it a tight bound?                                                               |
+|                    | Any comment on the order of the bound(power of $N$)?                               |
+|                    |                                                                                    |
+|                    | Note: Feel free to use more than 5 $N$ if you can. For example, if you are         |
+|                    | familiar with output to file process, you may run your code iteratively and output |
+|                    | all results to a file.                                                             |
+|                    |                                                                                    |
+|                    | You may use any software for plotting.                                             |
+|                    |                                                                                    |
+|                    | You may also plot your bound on the figure for illustration.                       |
+|--------------------+------------------------------------------------------------------------------------|
 
 * Anouncements
 
