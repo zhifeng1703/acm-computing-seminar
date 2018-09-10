@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>MAT5939-03 ACM Computing Seminar – Fall 2018</title>
-<!-- 2018-08-27 Mon 15:37 -->
+<!-- 2018-09-10 Mon 18:10 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="root" />
@@ -135,6 +135,48 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=Tex-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
 </head>
 <body>
 <div id="content">
@@ -255,6 +297,142 @@ Useful links: <a href="https://solarianprogrammer.com/2017/04/15/install-wsl-win
 <tr>
 <td class="center">&#xa0;</td>
 <td class="left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="center">3 <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-09-10 Mon&gt;</span></span></td>
+<td class="left"><a href="https://en.wikipedia.org/wiki/Basel_problem">Basel problem</a></td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">Basel problem asks for the precise summation of the</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">infinite series:</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">$$\sum\limits_{n=1}^{\infty}\frac{1}{n^2}$$</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">The answer is known as \(\frac{\pi^2}{6}\)</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">Now, consider the truncated sum</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">$$S_N=\sum\limits_{n=1}^{N} \frac{1}{n^2}$$</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">and the remainder term \(R_N=\frac{\pi^2}{6}-S_N\).</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">Derive a bound for \(R_N\) with respect to \(N\)</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">Write a code to compute \(S_N,R_N\) with given \(N\). Then</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">pick 5 proper \(N\) and run you code. Collect your result</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">and do a logplot with \((N,R_N)\). Make comments on the</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">the bound you derived and the result from your code:</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">Is it a tight bound?</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">Any comment on the order of the bound(power of \(N\))?</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">Note: Feel free to use more than 5 \(N\) if you can.</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">For example, if you are familiar with output process</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">to file, you can run your code iteratively and output</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">all results to a file.</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">You may use any software for plotting.</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">You may also plot your bound on the figure.</td>
 </tr>
 </tbody>
 </table>
