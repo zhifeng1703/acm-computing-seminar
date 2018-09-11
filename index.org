@@ -33,6 +33,9 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 |                    | 2. Install g++ or other compiler you prefer, create and compile helloworld.cpp.    |
 |--------------------+------------------------------------------------------------------------------------|
 | 3 <2018-09-10 Mon> | [[https://en.wikipedia.org/wiki/Basel_problem][Basel problem]]                                                                      |
+|                    | IMPORTANT: Do $S_N$ in single precision and $\frac{\pi^2}{6}$ in double precision. |
+|                    | So that you have your $R_N = \frac{\pi^2}{6}-double(S_N)$ in double precision.     |
+|                    |                                                                                    |
 |                    | Basel problem asks for the precise summation of the infinite series:               |
 |                    | $$\sum\limits_{n=1}^{\infty}\frac{1}{n^2}$$                                        |
 |                    | The answer is known as $\frac{\pi^2}{6}$                                           |
