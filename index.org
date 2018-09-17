@@ -24,41 +24,69 @@
 Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-subsystem-for-linux][Setup Subsystem]], [[https://solarianprogrammer.com/2017/04/16/windows-susbsystem-for-linux-xfce-4][Setup GUI]]
 * Assignments
 
-|--------------------+------------------------------------------------------------------------------------|
-| Week               | Assignment                                                                         |
-| <c>                |                                                                                    |
-|--------------------+------------------------------------------------------------------------------------|
-| 1 <2018-08-27 Mon> | 1. Read the Programming assignment resources carefully.                            |
-|                    |                                                                                    |
-|                    | 2. Install g++ or other compiler you prefer, create and compile helloworld.cpp.    |
-|--------------------+------------------------------------------------------------------------------------|
-| 3 <2018-09-10 Mon> | [[https://en.wikipedia.org/wiki/Basel_problem][Basel problem]]                                                                      |
-|                    | IMPORTANT: Do $S_N$ in single precision and $\frac{\pi^2}{6}$ in double precision. |
-|                    | So that you have your $R_N = \frac{\pi^2}{6}-double(S_N)$ in double precision.     |
-|                    |                                                                                    |
-|                    | Basel problem asks for the precise summation of the infinite series:               |
-|                    | $$\sum\limits_{n=1}^{\infty}\frac{1}{n^2}$$                                        |
-|                    | The answer is known as $\frac{\pi^2}{6}$                                           |
-|                    |                                                                                    |
-|                    | Now, consider the truncated sum                                                    |
-|                    | $$S_N=\sum\limits_{n=1}^{N} \frac{1}{n^2}$$                                        |
-|                    | and the remainder term $R_N=\frac{\pi^2}{6}-S_N$. Derive a bound for $R_N$ of $N$  |
-|                    |                                                                                    |
-|                    | Write a code to compute $S_N,R_N$ with given $N$. Then pick 5 proper $N$ and run   |
-|                    | it. Collect your result and do a logplot with $(N,R_N)$. Make comments on the      |
-|                    | bound you derived and the result from your code:                                   |
-|                    |                                                                                    |
-|                    | Is it a tight bound?                                                               |
-|                    | Any comment on the order of the bound(power of $N$)?                               |
-|                    |                                                                                    |
-|                    | Note: Feel free to use more than 5 $N$ if you can. For example, if you are         |
-|                    | familiar with output to file process, you may run your code iteratively and output |
-|                    | all results to a file.                                                             |
-|                    |                                                                                    |
-|                    | You may use any software for plotting.                                             |
-|                    |                                                                                    |
-|                    | You may also plot your bound on the figure for illustration.                       |
-|--------------------+------------------------------------------------------------------------------------|
+|--------------------+-------------------------------------------------------------------------------------|
+| Week               | Assignment                                                                          |
+| <c>                |                                                                                     |
+|--------------------+-------------------------------------------------------------------------------------|
+| 1 <2018-08-27 Mon> | 1. Read the Programming assignment resources carefully.                             |
+|                    |                                                                                     |
+|                    | 2. Install g++ or other compiler you prefer, create and compile helloworld.cpp.     |
+|--------------------+-------------------------------------------------------------------------------------|
+| 3 <2018-09-10 Mon> | [[https://en.wikipedia.org/wiki/Basel_problem][Basel problem]]                                                                       |
+|                    | IMPORTANT: Do $S_N$ in single precision and $\frac{\pi^2}{6}$ in double precision.  |
+| Assignment 1       | So that you have your $R_N = \frac{\pi^2}{6}-double(S_N)$ in double precision.      |
+|                    |                                                                                     |
+|                    | Basel problem asks for the precise summation of the infinite series:                |
+|                    | $$\sum\limits_{n=1}^{\infty}\frac{1}{n^2}$$                                         |
+|                    | The answer is known as $\frac{\pi^2}{6}$                                            |
+|                    |                                                                                     |
+|                    | Now, consider the truncated sum                                                     |
+|                    | $$S_N=\sum\limits_{n=1}^{N} \frac{1}{n^2}$$                                         |
+|                    | and the remainder term $R_N=\frac{\pi^2}{6}-S_N$. Derive a bound for $R_N$ of $N$   |
+|                    |                                                                                     |
+|                    | Write a code to compute $S_N,R_N$ with given $N$. Then pick 5 proper $N$ and run    |
+|                    | it. Collect your result and do a logplot with $(N,R_N)$. Make comments on the       |
+|                    | bound you derived and the result from your code:                                    |
+|                    |                                                                                     |
+|                    | Is it a tight bound?                                                                |
+|                    | Any comment on the order of the bound(power of $N$)?                                |
+|                    |                                                                                     |
+|                    | Note: Feel free to use more than 5 $N$ if you can. For example, if you are          |
+|                    | familiar with output to file process, you may run your code iteratively and output  |
+|                    | all results to a file.                                                              |
+|                    |                                                                                     |
+|                    | You may use any software for plotting.                                              |
+|                    |                                                                                     |
+|                    | You may also plot your bound on the figure for illustration.                        |
+|--------------------+-------------------------------------------------------------------------------------|
+| 4 <2018-09-17 Mon> | Follower problem                                                                    |
+|                    |                                                                                     |
+|                    | In social networking sites like Facebook, users with follower relationship creates  |
+|                    | a complicated oriented graph structure. Let $B\to A$ denotes $B$ follows $A$,       |
+|                    | and suppose $C\to B$, $B\to A$, we call $C$ a sub-follower of $A$.                  |
+|                    |                                                                                     |
+|                    | Given all follower relationship of $N$ users in [[./resources/data/Follower.txt][Follower.txt]], write a code to       |
+|                    | accomplish 2 tasks:                                                                 |
+|                    |                                                                                     |
+|                    | 1. Determined if a user $B$ is a follower or sub-follower (no need to distinguish), |
+|                    | of a user $A$.                                                                      |
+|                    | 2. For a given number $M$, counted how many users have followers and sub-followers  |
+|                    | more than $M$.                                                                      |
+|                    |                                                                                     |
+|                    | These tasks should be done in function. You may store whole follower network and    |
+|                    | work with raw data provide in the data. A better approach would be create your      |
+|                    | own data structure storing the information you need for the tasks, some kind of     |
+|                    | preprocessing of the raw data. Feel free to create your structure via =class=.      |
+|                    |                                                                                     |
+|                    | Data format:                                                                        |
+|                    | The first integer represents the number of all users $N$. The following numbers     |
+|                    | pair $A B$ represents user $A$ have followed $B$, $A\to B$. Example:                |
+|                    |                                                                                     |
+|                    | 3 1 2 2 1 2 3                                                                       |
+|                    |                                                                                     |
+|                    | This example means there are 3 users in total, user #1 and #2 follow each other     |
+|                    | and user #2 have followed user #3                                                   |
+|--------------------+-------------------------------------------------------------------------------------|
 
 * Anouncements
 

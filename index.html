@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>MAT5939-03 ACM Computing Seminar – Fall 2018</title>
-<!-- 2018-09-11 Tue 11:04 -->
+<!-- 2018-09-17 Mon 15:01 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="root" />
@@ -301,7 +301,7 @@ Useful links: <a href="https://solarianprogrammer.com/2017/04/15/install-wsl-win
 </tr>
 
 <tr>
-<td class="center">&#xa0;</td>
+<td class="center">Assignment 1</td>
 <td class="left">So that you have your \(R_N = \frac{\pi^2}{6}-double(S_N)\) in double precision.</td>
 </tr>
 
@@ -418,6 +418,142 @@ Useful links: <a href="https://solarianprogrammer.com/2017/04/15/install-wsl-win
 <tr>
 <td class="center">&#xa0;</td>
 <td class="left">You may also plot your bound on the figure for illustration.</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="center">4 <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-09-17 Mon&gt;</span></span></td>
+<td class="left">Follower problem</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">In social networking sites like Facebook, users with follower relationship creates</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">a complicated oriented graph structure. Let \(B\to A\) denotes \(B\) follows \(A\),</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">and suppose \(C\to B\), \(B\to A\), we call \(C\) a sub-follower of \(A\).</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">Given all follower relationship of \(N\) users in <a href="./resources/data/Follower.txt">Follower.txt</a>, write a code to</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">accomplish 2 tasks:</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">1. Determined if a user \(B\) is a follower or sub-follower (no need to distinguish),</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">of a user \(A\).</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">2. For a given number \(M\), counted how many users have followers and sub-followers</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">more than \(M\).</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">These tasks should be done in function. You may store whole follower network and</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">work with raw data provide in the data. A better approach would be create your</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">own data structure storing the information you need for the tasks, some kind of</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">preprocessing of the raw data. Feel free to create your structure via <code>class</code>.</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">Data format:</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">The first integer represents the number of all users \(N\). The following numbers</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">pair \(A B\) represents user \(A\) have followed \(B\), \(A\to B\). Example:</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">3 1 2 2 1 2 3</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">This example means there are 3 users in total, user #1 and #2 follow each other</td>
+</tr>
+
+<tr>
+<td class="center">&#xa0;</td>
+<td class="left">and user #2 have followed user #3</td>
 </tr>
 </tbody>
 </table>
