@@ -65,7 +65,7 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 |                    | a complicated oriented graph structure. Let $B\to A$ denotes $B$ follows $A$,       |
 |                    | and suppose $C\to B$, $B\to A$, we call $C$ a sub-follower of $A$.                  |
 |                    |                                                                                     |
-|                    | Given all follower relationship of $N$ users in [[./resources/data/Follower.txt][Follower.txt]], write a code to       |
+|                    | Given all follower relationship of $N$ users in [[./resources/data/follower.txt][follower.txt]], write a code to       |
 |                    | accomplish 2 tasks:                                                                 |
 |                    |                                                                                     |
 |                    | 1. Determined if a user $B$ is a follower or sub-follower (no need to distinguish), |
@@ -90,9 +90,11 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 
 * Anouncements
 
-|------------------+----------------------------------------------------------------|
-| Date             | Announcement                                                   |
-|------------------+----------------------------------------------------------------|
+|------------------+---------------------------------------------------------------------------------------|
+| Date             | Announcement                                                                          |
+|------------------+---------------------------------------------------------------------------------------|
+| <2018-09-20 Thu> | The link to [[./resources/data/follower.txt][follower.txt]] has been fixed. The file contains 100 vertices and 500 edges |
+|------------------+---------------------------------------------------------------------------------------|
 
 
 
