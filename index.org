@@ -61,7 +61,7 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 |--------------------+-------------------------------------------------------------------------------------|
 | 4 <2018-09-17 Mon> | Follower problem                                                                    |
 |                    |                                                                                     |
-|                    | In social networking sites like Facebook, users with follower relationship creates  |
+| Assignment 2       | In social networking sites like Facebook, users with follower relationship creates  |
 |                    | a complicated oriented graph structure. Let $B\to A$ denotes $B$ follows $A$,       |
 |                    | and suppose $C\to B$, $B\to A$, we call $C$ a sub-follower of $A$.                  |
 |                    |                                                                                     |
@@ -87,6 +87,15 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 |                    | This example means there are 3 users in total, user #1 and #2 follow each other     |
 |                    | and user #2 have followed user #3                                                   |
 |--------------------+-------------------------------------------------------------------------------------|
+| <2018-09-24 Mon>   | Duplicate the matrix class in the guide, add one more function =print= to it.       |
+|                    |                                                                                     |
+| Assignment 3       | this =print= will output the matrix to a file. You may open the file outside or     |
+|                    | inside the function. In other words, for Fortran, you may only the file outside and |
+|                    | pass the unit number of your file to the function or you can onpen the file inside  |
+|                    | the function and close it when you exit, for C++, you may create the buffer         |
+|                    | zone =ofstream= outside pass the reference or you may create the buffer zone inside |
+|                    | the function. In practise open the file outside and pass the buffer zone is better. |
+|--------------------+-------------------------------------------------------------------------------------|
 
 * Anouncements
 
@@ -94,6 +103,8 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 | Date             | Announcement                                                                          |
 |------------------+---------------------------------------------------------------------------------------|
 | <2018-09-20 Thu> | The link to [[./resources/data/follower.txt][follower.txt]] has been fixed. The file contains 100 vertices and 500 edges |
+|------------------+---------------------------------------------------------------------------------------|
+| <2018-09-24 Mon> | A solution to Basel problem has been release. [[./resource/BaselProblem.zip][BaselProblem.zip]]                        |
 |------------------+---------------------------------------------------------------------------------------|
 
 
