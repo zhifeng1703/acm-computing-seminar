@@ -104,7 +104,8 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 |------------------+---------------------------------------------------------------------------------------|
 | <2018-09-20 Thu> | The link to [[./resources/data/follower.txt][follower.txt]] has been fixed. The file contains 100 vertices and 500 edges |
 |------------------+---------------------------------------------------------------------------------------|
-| <2018-09-24 Mon> | A solution to Basel problem has been release. [[./resource/BaselProblem.zip][BaselProblem.zip]]                        |
+| <2018-09-24 Mon> | A solution to Basel problem has been release. [[./resources/BaselProblem.zip][BaselProblem.zip]]                        |
+|                  |                                                                                       |
 |------------------+---------------------------------------------------------------------------------------|
 
 
