@@ -102,14 +102,16 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 | Assignment 4       |                                                                                      |
 |--------------------+--------------------------------------------------------------------------------------|
 
+
+
 |-----------+-----------------------------------------------------------------------------------------------|
 |           | Program                                                                                       |
 |-----------+-----------------------------------------------------------------------------------------------|
-| Program 1 | [[https://en.wikipedia.org/wiki/Binary_serach_tree][Binary Serach Tree]]:                                                                           |
+| Program 1 | [[https://en.wikipedia.org/wiki/Binary_search_tree][Binary Search Tree]]:                                                                           |
 |           |                                                                                               |
 |           | Implement a binary serach tree class with following feature:                                  |
 |           |                                                                                               |
-|           | 1, Insert data (node) to an existing tree. Note that this tree are in general not balanced.   |
+|           | 1, Insert data (node) to an existing tree. Note that the tree is in general not balanced.     |
 |           | 2, Print out the tree by levels. Level $k$ has at most $2^{k-1}$ nodes. Print out the tree    |
 |           | by levels. Use * to represented null node.                                                    |
 |           |                                                                                               |
