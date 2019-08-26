@@ -1,4 +1,4 @@
-cd#+title: MAD5939-03 ACM Computing Seminar – Fall 2018
+#+title: MAD5939-03 ACM Computing Seminar – Fall 20189
 #+name: Zhifeng Deng
 #+options: html-postamble:nil toc:nil name:nil
 #+options: H:1 num:0
@@ -9,7 +9,7 @@ cd#+title: MAD5939-03 ACM Computing Seminar – Fall 2018
 
 | *Time & Place:* | Monday 18:45-20:00, LOV 102                       |
 | *Instructor:*   | Zhifeng Deng                                      |
-| *Office Hours:* | Tues/Thurs 10:30-12:00 or by appointment          |
+| *Office Hours:* | Monday/Tuesday 1:00-2:30 or by appointment        |
 | *Email:*        | [[mailto:zdeng@math.fsu.edu?subject=MAT5939 ... ][zdeng@math.fsu.edu]]                                |
 | *Website:*      | [[./][www.math.fsu.edu/~zdeng/acm-computing-seminar/]]    |
 
@@ -44,29 +44,36 @@ Graduate standing in mathematics.
 
 * Grade Policy:
 
-Homework is assigned weekly and counts for 50% of your final grade.
+Homework will be assigned biweekly, 5 in total. They are simple routines that have
+nontrivial behaviors under certain aspects, e.g., accuracy, complexity and/or data 
+structure. You are expected to implement the routines, run experiments to expolit
+the features and collect, present and discuss your result systematically in documents. 
 
-4 comprehensive programs will be released in the second week and they count for
-the other 50% of your grade. You can submit your programs anytime before the seminar
-ends.
+Beside the biweekly homework, there is a comprehensive program assignment. You will
+work on a more complicated problems that involves sophisticated experimental design.
+The report of this comprehensive program will be graded at the same level of FCM's
+programs.
 
-Your final grade will be $(Average(HW)+Average(Programs)/2)$
 
-Homework and programs are graded on a 0 – 3 scale:
+You only need to do either 5 homework or 1 comprehensive program. The comprehensive
+program is for those who have mastered certain programming skills. If your program
+report meets the requirement, you are consider qualified for both this seminar and
+FCM's programming prerequisities. 
+
+Homework is graded on a 0 – 3 scale:
 
     + 0 - no result submitted or code copied from another source
     + 1 - result submitted, but did not demonstrate code functions properly
     + 2 - showed code functions properly, but results not fully explained
     + 3 - showed code functions properly, presented results clearly and fully
 
-To earn a grade of S, you must have final grade greater or equal to 2. 
+Program is graded on a 0 - 100 scale which is the same as normal FCM program.
+
+To earn a grade of S, you must have final grade greater or equal to 2 for homework or 70 for comprehensive program. 
 
 For each homework or program assignment you will email me a report with your source code in the required format.
 
 For some program assignments, you may be expected to come to my office and run it.
-
-When e-mailing, please include [MAT5939] in the subject line 
-of the email.
 
 * Homework Policy
 
