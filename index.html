@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>MAT5939-03 ACM Computing Seminar – Fall 2018</title>
-<!-- 2018-10-15 Mon 17:36 -->
+<!-- 2019-08-26 Mon 14:26 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="root" />
@@ -207,7 +207,7 @@ for the JavaScript code in this tag.
 
 <tr>
 <td class="left"><b>Office Hours:</b></td>
-<td class="left">Tues/Thurs 10:30-12:00 or by appointment</td>
+<td class="left">Monday/Tuesday 1:00-2:30 or by appointment</td>
 </tr>
 
 <tr>
@@ -269,13 +269,13 @@ Useful links: <a href="https://solarianprogrammer.com/2017/04/15/install-wsl-win
 </colgroup>
 <thead>
 <tr>
-<th scope="col" class="center">Week</th>
+<th scope="col" class="center">Due Time</th>
 <th scope="col" class="left">Assignment</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="center">1 <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-08-27 Mon&gt;</span></span></td>
+<td class="center">1 <span class="timestamp-wrapper"><span class="timestamp">&lt;2019-08-26 Mon&gt;</span></span></td>
 <td class="left">1. Read the Programming assignment resources carefully.</td>
 </tr>
 
@@ -291,18 +291,18 @@ Useful links: <a href="https://solarianprogrammer.com/2017/04/15/install-wsl-win
 </tbody>
 <tbody>
 <tr>
-<td class="center">3 <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-09-10 Mon&gt;</span></span></td>
-<td class="left"><a href="https://en.wikipedia.org/wiki/Basel_problem">Basel problem</a></td>
+<td class="center">2 <span class="timestamp-wrapper"><span class="timestamp">&lt;2019-09-09 Mon&gt;</span></span></td>
+<td class="left">Summation</td>
 </tr>
 
 <tr>
 <td class="center">&#xa0;</td>
-<td class="left">IMPORTANT: Do \(S_N\) in single precision and \(\frac{\pi^2}{6}\) in double precision.</td>
+<td class="left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="center">Assignment 1</td>
-<td class="left">So that you have your \(R_N = \frac{\pi^2}{6}-double(S_N)\) in double precision.</td>
+<td class="left">Consider the Taylor series $$\cos(x)=\sum_{k=0}^{\infty}\frac{(-1)^kx^{2k}}{(2k)!}.$$</td>
 </tr>
 
 <tr>
@@ -312,37 +312,17 @@ Useful links: <a href="https://solarianprogrammer.com/2017/04/15/install-wsl-win
 
 <tr>
 <td class="center">&#xa0;</td>
-<td class="left">Basel problem asks for the precise summation of the infinite series:</td>
+<td class="left">Write a routine to evaluate \(\cos(x)\) with the following truncated serise:</td>
 </tr>
 
 <tr>
 <td class="center">&#xa0;</td>
-<td class="left">$$\sum\limits_{n=1}^{\infty}\frac{1}{n^2}$$</td>
+<td class="left">$$s_n=\sum_{k=1}^n\frac{(-1)^kx^{2k}}{(2k)!}$$</td>
 </tr>
 
 <tr>
 <td class="center">&#xa0;</td>
-<td class="left">The answer is known as \(\frac{\pi^2}{6}\)</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">Now, consider the truncated sum</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">$$S_N=\sum\limits_{n=1}^{N} \frac{1}{n^2}$$</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">and the remainder term \(R_N=\frac{\pi^2}{6}-S_N\). Derive a bound for \(R_N\) of \(N\)</td>
+<td class="left">in single precision at \(x=1.5708\).</td>
 </tr>
 
 <tr>
@@ -352,32 +332,27 @@ Useful links: <a href="https://solarianprogrammer.com/2017/04/15/install-wsl-win
 
 <tr>
 <td class="center">&#xa0;</td>
-<td class="left">Write a code to compute \(S_N,R_N\) with given \(N\). Then pick 5 proper \(N\) and run</td>
+<td class="left">You should determine the truncation \(n\) by bounding the relative error</td>
 </tr>
 
 <tr>
 <td class="center">&#xa0;</td>
-<td class="left">it. Collect your result and do a logplot with \((N,R_N)\). Make comments on the</td>
+<td class="left">$$\Vert (s_n-\cos(x))/\cos(x)\Vert$$</td>
 </tr>
 
 <tr>
 <td class="center">&#xa0;</td>
-<td class="left">bound you derived and the result from your code:</td>
+<td class="left">under threshold <code>RelTor</code>. Generate the exact answer, \(\cos(x)\), the exact</td>
 </tr>
 
 <tr>
 <td class="center">&#xa0;</td>
-<td class="left">&#xa0;</td>
+<td class="left">truncated sum, \(s_n\) and the exact series in double precision.</td>
 </tr>
 
 <tr>
 <td class="center">&#xa0;</td>
-<td class="left">Is it a tight bound?</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">Any comment on the order of the bound(power of \(N\))?</td>
+<td class="left">NOTE: Computation done in double precision is consider exact w.r.t single precision.</td>
 </tr>
 
 <tr>
@@ -387,63 +362,27 @@ Useful links: <a href="https://solarianprogrammer.com/2017/04/15/install-wsl-win
 
 <tr>
 <td class="center">&#xa0;</td>
-<td class="left">Note: Feel free to use more than 5 \(N\) if you can. For example, if you are</td>
+<td class="left">You routine should evaluate the sum, \(\hat{s}_n\), in different strategies:</td>
 </tr>
 
 <tr>
 <td class="center">&#xa0;</td>
-<td class="left">familiar with output to file process, you may run your code iteratively and output</td>
+<td class="left">1. Accumulate in the decreasing order of the magnitude.</td>
 </tr>
 
 <tr>
 <td class="center">&#xa0;</td>
-<td class="left">all results to a file.</td>
+<td class="left">2. Accumulate in the increasing order of the magnitude.</td>
 </tr>
 
 <tr>
 <td class="center">&#xa0;</td>
-<td class="left">&#xa0;</td>
+<td class="left">3. Accumulate the positive and nagative part in decreasing order of magnitude seperately.</td>
 </tr>
 
 <tr>
 <td class="center">&#xa0;</td>
-<td class="left">You may use any software for plotting.</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">You may also plot your bound on the figure for illustration.</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="center">4 <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-09-17 Mon&gt;</span></span></td>
-<td class="left">Follower problem</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="center">Assignment 2</td>
-<td class="left">In social networking sites like Facebook, users with follower relationship creates</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">a complicated oriented graph structure. Let \(B\to A\) denotes \(B\) follows \(A\),</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">and suppose \(C\to B\), \(B\to A\), we call \(C\) a sub-follower of \(A\).</td>
+<td class="left">4. Accumulate the positive and nagative part in increasing order of magnitude seperately.</td>
 </tr>
 
 <tr>
@@ -453,37 +392,17 @@ Useful links: <a href="https://solarianprogrammer.com/2017/04/15/install-wsl-win
 
 <tr>
 <td class="center">&#xa0;</td>
-<td class="left">Given all follower relationship of \(N\) users in <a href="./resources/data/follower.txt">follower.txt</a>, write a code to</td>
+<td class="left">Check the final error you achieved \(\Vert (\hat{s}_n-\cos(x))/\cos(x)\Vert\) as well as</td>
 </tr>
 
 <tr>
 <td class="center">&#xa0;</td>
-<td class="left">accomplish 2 tasks:</td>
+<td class="left">the error w.r.t to the truncated sum \(\Vert (\hat{s}_n-s_n)/s_n\). Discuss your observation.</td>
 </tr>
 
 <tr>
 <td class="center">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">1. Determined if a user \(B\) is a follower or sub-follower (no need to distinguish),</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">of a user \(A\).</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">2. For a given number \(M\), counted how many users have followers and sub-followers</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">more than \(M\).</td>
+<td class="left">Do you find certain strategies under certain <code>RelTol</code> perform terrible? In what sense?</td>
 </tr>
 
 <tr>
@@ -493,278 +412,11 @@ Useful links: <a href="https://solarianprogrammer.com/2017/04/15/install-wsl-win
 
 <tr>
 <td class="center">&#xa0;</td>
-<td class="left">These tasks should be done in function. You may store whole follower network and</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">work with raw data provide in the data. A better approach would be create your</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">own data structure storing the information you need for the tasks, some kind of</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">preprocessing of the raw data. Feel free to create your structure via <code>class</code>.</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
 <td class="left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="center">&#xa0;</td>
-<td class="left">Data format:</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">The first integer represents the number of all users \(N\). The following numbers</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">pair \(A B\) represents user \(A\) have followed \(B\), \(A\to B\). Example:</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">3 1 2 2 1 2 3</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">This example means there are 3 users in total, user #1 and #2 follow each other</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">and user #2 have followed user #3</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="center"><span class="timestamp-wrapper"><span class="timestamp">&lt;2018-09-24 Mon&gt;</span></span></td>
-<td class="left">Duplicate the matrix class in the guide, add one more function <code>print</code> to it.</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="center">Assignment 3</td>
-<td class="left">this <code>print</code> will output the matrix to a file. You may open the file outside or</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">inside the function. In other words, for Fortran, you may open the file outside and</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">pass the unit number of your file to the function or you may open the file inside</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">the function and close it when you exit, for C++, you may create the buffer</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">zone <code>ofstream</code> outside and pass the reference or you may create the buffer zone</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">inside the function. In practice open the file outside will be better.</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="center"><span class="timestamp-wrapper"><span class="timestamp">&lt;2018-10-15 Mon&gt;</span></span></td>
-<td class="left">Integrate the matrix class in the guide to a header file and an implementation file.</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">Call your <code>print</code> function in your main funcion by loading this header file.</td>
-</tr>
-
-<tr>
-<td class="center">Assignment 4</td>
-<td class="left">&#xa0;</td>
-</tr>
-</tbody>
-</table>
-
-
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="left" />
-
-<col  class="left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="left">&#xa0;</th>
-<th scope="col" class="left">Program</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="left">Program 1</td>
-<td class="left"><a href="https://en.wikipedia.org/wiki/Binary_search_tree">Binary Search Tree</a>:</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">Implement a binary serach tree class with following feature:</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">1, Insert data (node) to an existing tree. Note that the tree is in general not balanced.</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">2, Print out the tree by levels. Level \(k\) has at most \(2^{k-1}\) nodes. Print out the tree</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">by levels. Use * to represented null node.</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">Then for some series, insert the data to an empty tree in given order and print the final</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">tree. For example, for data \(\{4,2,3,8,5,6\}\), the print out would be</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">4</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">2 8</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">* 3 5 *</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">* * * * * 6 * *</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="left">Program 2</td>
-<td class="left"><a href="https://en.wikipedia.org/wiki/Markov_chain">Markov Chain</a>:</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">Markov Chain can be described by a transition matrix \(P\). The \(n\)-th state \(x(n)\) of an input</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">vector \(x(0)\) is given by</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">\[x(n)=x(0)P^n\]</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">Implement an efficient method to compute the \(x(n)\) with given \(P\) and \(x(0)\). Analyze the</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">efficiency with resepct to \(n\), compare with the worst method you can come up with.</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">Generate a random \(P\) and \(x(0)\), run your code for different \(n\) and time your method with</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">the worst method. Check if the result is consistant with your analysis.</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
 <td class="left">&#xa0;</td>
 </tr>
 </tbody>
@@ -794,70 +446,8 @@ Useful links: <a href="https://solarianprogrammer.com/2017/04/15/install-wsl-win
 </thead>
 <tbody>
 <tr>
-<td class="left"><span class="timestamp-wrapper"><span class="timestamp">&lt;2018-09-20 Thu&gt;</span></span></td>
-<td class="left">The link to <a href="./resources/data/follower.txt">follower.txt</a> has been fixed. The file contains 100 vertices and 500 edges</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="left"><span class="timestamp-wrapper"><span class="timestamp">&lt;2018-09-24 Mon&gt;</span></span></td>
-<td class="left">A solution to Basel problem has been release. <a href="./resources/BaselProblem.zip">BaselProblem.zip</a></td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="left"><span class="timestamp-wrapper"><span class="timestamp">&lt;2018-10-15 Mon&gt;</span></span></td>
-<td class="left">1. Assignments: here is the what you are expected to turn in:</td>
-</tr>
-
-<tr>
 <td class="left">&#xa0;</td>
 <td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">Assignment 1: a complete report with source code.</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">Assignment 2: your source code with some results, some txt file recording how many</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">users have \(M\) follower and sub follower for a few \(M\) is enough.</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">Assignment 3 and 4: your source code with the header file and implementation file.</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">Program 1: Your source code with a result, a file print out the binary tree for some</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">input is enough.</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">Program 2: Your source code with the analysis on complexity. Compare your method's</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">efficiency with the worst method you can come up with. (short report needed)</td>
 </tr>
 </tbody>
 </table>
