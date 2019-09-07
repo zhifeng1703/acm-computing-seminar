@@ -16,10 +16,10 @@
 ** Programming Language Guides
 + [[./resources/langs/cpp/][C++ guide]] ([[./resources/langs/cpp/index.pdf][pdf]])
 + [[./resources/langs/fortran/][Fortran guide]] ([[./resources/langs/fortran/index.pdf][pdf]])
-** Programming assignment resources
+** Programming Assignment Resource
 + [[./resources/prog/assignment-template.zip][Programming assignment template]] (Read the README!)
 + [[./resources/prog/example-assignment.zip][Example programming assignment and solution]]
-** Programming environment setup
+** Programming Environment Setup
 + [[./Linux.txt][Setup Windows Subsystem for Linux]]
 Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-subsystem-for-linux][Setup Subsystem]], [[https://solarianprogrammer.com/2017/04/16/windows-susbsystem-for-linux-xfce-4][Setup GUI]]
 * Assignments
@@ -32,7 +32,7 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 |                    |                                                                                                  |
 |                    | 2. Install g++ or other compiler you prefer, create and compile helloworld.cpp.                  |
 |--------------------+--------------------------------------------------------------------------------------------------|
-| 2 <2019-09-09 Mon> | Summation                                                                                        |
+| 2 <2019-09-16 Mon> | Summation.                                                                                       |
 |                    |                                                                                                  |
 | Assignment 1       | Consider the Taylor series $$\cos(x)=\sum_{k=0}^{\infty}\frac{(-1)^kx^{2k}}{(2k)!}.$$            |
 |                    |                                                                                                  |
@@ -41,19 +41,19 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 |                    | in single precision at $x=1.5708$.                                                               |
 |                    |                                                                                                  |
 |                    | You should determine the truncation $n$ by bounding the relative error                           |
-|                    | $$\vert (s_n-\cos(x))/\cos(x)\vert$$                                                             |
-|                    | under threshold =RelTor=. Generate the exact answer, $\cos(x)$, the exact                        |
+|                    | $$\lvert (s_n-\cos(x))/\cos(x)\rvert$$                                                             |
+|                    | under threshold =RelTol=. Generate the exact answer, $\cos(x)$, the exact                        |
 |                    | truncated sum, $s_n$ and the exact series in double precision.                                   |
 |                    | NOTE: Computation done in double precision is consider exact w.r.t single precision.             |
 |                    |                                                                                                  |
 |                    | You routine should evaluate the sum, $\hat{s}_n$, in different strategies:                       |
-|                    | 1. Accumulate in the decreasing order of the magnitude.                                          |
-|                    | 2. Accumulate in the increasing order of the magnitude.                                          |
-|                    | 3. Accumulate the positive and nagative part in decreasing order of magnitude separately.        |
-|                    | 4. Accumulate the positive and nagative part in increasing order of magnitude separately.        |
+|                    | 1. Accumulate in decreasing order of the magnitude.                                              |
+|                    | 2. Accumulate in increasing order of the magnitude.                                              |
+|                    | 3. Accumulate the positive and nagative parts in decreasing order of magnitude separately.       |
+|                    | 4. Accumulate the positive and nagative parts in increasing order of magnitude separately.       |
 |                    |                                                                                                  |
-|                    | Check the final error you achieved $\vert (\hat{s}_n-\cos(x))/\cos(x)\vert$ as well as           |
-|                    | the error w.r.t to the truncated sum $\vert (\hat{s}_n-s_n)/s_n\vert$. Discuss your observation. |
+|                    | Check the final error you achieved $\lvert(\hat{s}_n-\cos(x))/\cos(x) \rvert$ as well as                |
+|                    | the error w.r.t to the truncated sum $\lvert (\hat{s}_n-s_n)/s_n \rvert$. Discuss your observation. |
 |                    | Do you find certain strategies under certain =RelTol= perform terrible? In what sense?           |
 |                    |                                                                                                  |
 |                    |                                                                                                  |
@@ -65,11 +65,12 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 
 * Anouncements
 
-|------------------+---------------------------------------------------------------------------------------|
-| Date             | Announcement                                                                          |
-|------------------+---------------------------------------------------------------------------------------|
-|                  |                                                                                       |
-|------------------+---------------------------------------------------------------------------------------|
+|------------------+----------------------------------------|
+| Date             | Announcement                           |
+|------------------+----------------------------------------|
+| <2019-09-07 Sat> | The due day of assignment 1 corrected. |
+|                  |                                        |
+|------------------+----------------------------------------|
 
 
 #+html: </div>
