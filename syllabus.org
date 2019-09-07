@@ -1,4 +1,4 @@
-#+title: MAD5939-03 ACM Computing Seminar – Fall 20119
+#+title: MAD5939-03 ACM Computing Seminar – Fall 2019 
 #+name: Zhifeng Deng
 #+options: html-postamble:nil toc:nil name:nil
 #+options: H:1 num:0
