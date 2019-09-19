@@ -24,41 +24,59 @@
 Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-subsystem-for-linux][Setup Subsystem]], [[https://solarianprogrammer.com/2017/04/16/windows-susbsystem-for-linux-xfce-4][Setup GUI]]
 * Assignments
 
-|--------------------+--------------------------------------------------------------------------------------------------|
-| Due Time           | Assignment                                                                                       |
-| <c>                |                                                                                                  |
-|--------------------+--------------------------------------------------------------------------------------------------|
-| 1 <2019-08-26 Mon> | 1. Read the Programming assignment resources carefully.                                          |
-|                    |                                                                                                  |
-|                    | 2. Install g++ or other compiler you prefer, create and compile helloworld.cpp.                  |
-|--------------------+--------------------------------------------------------------------------------------------------|
-| 2 <2019-09-16 Mon> | Summation.                                                                                       |
-|                    |                                                                                                  |
-| Assignment 1       | Consider the Taylor series $$\cos(x)=\sum_{k=0}^{\infty}\frac{(-1)^kx^{2k}}{(2k)!}.$$            |
-|                    |                                                                                                  |
-|                    | Write a routine to evaluate $\cos(x)$ with the following truncated serise:                       |
-|                    | $$s_n=\sum_{k=1}^n\frac{(-1)^kx^{2k}}{(2k)!}$$                                                   |
-|                    | in single precision at $x=1.5708$.                                                               |
-|                    |                                                                                                  |
-|                    | You should determine the truncation $n$ by bounding the relative error                           |
-|                    | $$\lvert (s_n-\cos(x))/\cos(x)\rvert$$                                                             |
-|                    | under threshold =RelTol=. Generate the exact answer, $\cos(x)$, the exact                        |
-|                    | truncated sum, $s_n$ and the exact series in double precision.                                   |
-|                    | NOTE: Computation done in double precision is consider exact w.r.t single precision.             |
-|                    |                                                                                                  |
-|                    | You routine should evaluate the sum, $\hat{s}_n$, in different strategies:                       |
-|                    | 1. Accumulate in decreasing order of the magnitude.                                              |
-|                    | 2. Accumulate in increasing order of the magnitude.                                              |
-|                    | 3. Accumulate the positive and nagative parts in decreasing order of magnitude separately.       |
-|                    | 4. Accumulate the positive and nagative parts in increasing order of magnitude separately.       |
-|                    |                                                                                                  |
-|                    | Check the final error you achieved $\lvert(\hat{s}_n-\cos(x))/\cos(x) \rvert$ as well as                |
+|--------------------+-----------------------------------------------------------------------------------------------------|
+| Due Time           | Assignment                                                                                          |
+| <c>                |                                                                                                     |
+|--------------------+-----------------------------------------------------------------------------------------------------|
+| 1 <2019-08-26 Mon> | 1. Read the Programming assignment resources carefully.                                             |
+|                    |                                                                                                     |
+|                    | 2. Install g++ or other compiler you prefer, create and compile helloworld.cpp.                     |
+|--------------------+-----------------------------------------------------------------------------------------------------|
+| 2 <2019-09-16 Mon> | Summation.                                                                                          |
+|                    |                                                                                                     |
+| Assignment 2       | Consider the Taylor series $$\cos(x)=\sum_{k=0}^{\infty}\frac{(-1)^kx^{2k}}{(2k)!}.$$               |
+|                    |                                                                                                     |
+|                    | Write a routine to evaluate $\cos(x)$ with the following truncated serise:                          |
+|                    | $$s_n=\sum_{k=1}^n\frac{(-1)^kx^{2k}}{(2k)!}$$                                                      |
+|                    | in single precision at $x=1.5708$.                                                                  |
+|                    |                                                                                                     |
+|                    | You should determine the truncation $n$ by bounding the relative error                              |
+|                    | $$\lvert (s_n-\cos(x))/\cos(x)\rvert$$                                                              |
+|                    | under threshold =RelTol=. Generate the exact answer, $\cos(x)$, the exact                           |
+|                    | truncated sum, $s_n$ and the exact series in double precision.                                      |
+|                    | NOTE: Computation done in double precision is consider exact w.r.t single precision.                |
+|                    |                                                                                                     |
+|                    | You routine should evaluate the sum, $\hat{s}_n$, in different strategies:                          |
+|                    | 1. Accumulate in decreasing order of the magnitude.                                                 |
+|                    | 2. Accumulate in increasing order of the magnitude.                                                 |
+|                    | 3. Accumulate the positive and nagative parts in decreasing order of magnitude separately.          |
+|                    | 4. Accumulate the positive and nagative parts in increasing order of magnitude separately.          |
+|                    |                                                                                                     |
+|                    | Check the final error you achieved $\lvert(\hat{s}_n-\cos(x))/\cos(x) \rvert$ as well as            |
 |                    | the error w.r.t to the truncated sum $\lvert (\hat{s}_n-s_n)/s_n \rvert$. Discuss your observation. |
-|                    | Do you find certain strategies under certain =RelTol= perform terrible? In what sense?           |
-|                    |                                                                                                  |
-|                    |                                                                                                  |
-|                    |                                                                                                  |
-|--------------------+--------------------------------------------------------------------------------------------------|
+|                    | Do you find certain strategies under certain =RelTol= perform terrible? In what sense?              |
+|                    |                                                                                                     |
+|                    |                                                                                                     |
+|                    |                                                                                                     |
+|--------------------+-----------------------------------------------------------------------------------------------------|
+| 3 <2019-09-30 Mon> | Newton method.                                                                                      |
+|                    |                                                                                                     |
+| Assignemnt 3       | Implement Newton method, i.e., the iteration                                                        |
+|                    | $$x_{k+1}=x_k-\frac{f(x_k)}{f'(x_{k+1})}$$                                                          |
+|                    | to solve the problem                                                                                |
+|                    | $$x^3-x+0.384900179$$                                                                               |
+|                    | in IEEE double precision system.                                                                    |
+|                    |                                                                                                     |
+|                    | Your routine should terminate when $x_{k+1}$ gets no update, i.e. $x_{k+1}=x_{k}$. Use the last     |
+|                    | $x_{k}$ as the true solution $x_*$, i.e. $x_*=x_{k_{max}}$. Do the log-log plot of $                |
+|                    | $\lvert x_k-x_*\rvert$ vs $k$. Comment on the quadratic behavior and possibly some outliers.        |
+|                    |                                                                                                     |
+|                    | Note that in this simple case, you may not obtain a nice straight line to indicate the convergence  |
+|                    | rate. Since quadratic convergence in 1 dimension problem is way too fast. The convergent sequence   |
+|                    | is short and the numeric error comes in too early. However, you can still comment on the magnitude, |
+|                    | which indicates quadratic convergence.                                                              |
+|                    |                                                                                                     |
+|--------------------+-----------------------------------------------------------------------------------------------------|
 
 
 
@@ -71,7 +89,6 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 | <2019-09-07 Sat> | The due day of assignment 1 corrected. |
 |                  |                                        |
 |------------------+----------------------------------------|
-
 
 #+html: </div>
 

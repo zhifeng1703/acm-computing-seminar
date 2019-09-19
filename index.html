@@ -1,94 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>MAT5939-03 ACM Computing Seminar – Fall 2019</title>
-<!-- 2019-09-07 Sat 17:44 -->
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="generator" content="Org-mode" />
-<meta  name="author" content="root" />
+<title>MAT5939-03 ACM Computing Seminar – Fall 2019 </title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="title" content="MAT5939-03 ACM Computing Seminar – Fall 2019 "/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2019-09-19T00:27-0400"/>
+<meta name="author" content="Zhifeng Deng"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
   .title  { text-align: center; }
-  .todo   { font-family: monospace; color: red; }
+  .todo   { color: red; }
   .done   { color: green; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
   .timestamp { color: #bebebe; }
   .timestamp-kwd { color: #5f9ea0; }
-  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
   }
-  pre.src {
-    position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
-    padding: 3px;
-    border: 1px solid black;
-  }
-  pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.right  { text-align: center;  }
-  th.left   { text-align: center;   }
-  th.center { text-align: center; }
-  td.right  { text-align: right;  }
-  td.left   { text-align: left;   }
-  td.center { text-align: center; }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
   dt { font-weight: bold; }
-  .footpara:nth-child(2) { display: inline; }
-  .footpara { display: block; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
     background: #ffffcc;
   }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
   textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="css/main.css">
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -135,8 +106,57 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=Tex-AMS-MML_HTMLorMML"></script>
-<script type="text/javascript">
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js">
+/**
+ *
+ * @source: http://orgmode.org/mathjax/MathJax.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in http://orgmode.org/mathjax/MathJax.js.
+ *
+ * Copyright (C) 2012-2013  MathJax
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in http://orgmode.org/mathjax/MathJax.js.
+ *
+ */
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code below.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code below is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code below.
+*/
 <!--/*--><![CDATA[/*><!--*/
     MathJax.Hub.Config({
         // Only one of the two following lines, depending on user settings
@@ -179,288 +199,182 @@ for the JavaScript code in this tag.
 </script>
 </head>
 <body>
+
+<div id="preamble">
+
+</div>
+
 <div id="content">
-<h1 class="title">MAT5939-03 ACM Computing Seminar – Fall 2019</h1>
+<h1 class="title">MAT5939-03 ACM Computing Seminar – Fall 2019 </h1>
+
+
 <div id="main">
 
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1">Course Information <a href="./syllabus.html">(syllabus)</a></h2>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2"></span> Course Information <a href="./syllabus.html">(syllabus)</a></h2>
 <div class="outline-text-2" id="text-1">
+
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="left" />
-
-<col  class="left" />
+<colgroup><col class="left" /><col class="left" />
 </colgroup>
 <tbody>
-<tr>
-<td class="left"><b>Time &amp; Place:</b></td>
-<td class="left">Monday 18:45-20:00, LOV 102</td>
-</tr>
-
-<tr>
-<td class="left"><b>Instructor:</b></td>
-<td class="left">Zhifeng Deng</td>
-</tr>
-
-<tr>
-<td class="left"><b>Office Hours:</b></td>
-<td class="left">Monday/Tuesday 1:00-2:30 or by appointment</td>
-</tr>
-
-<tr>
-<td class="left"><b>Email:</b></td>
-<td class="left"><a href="mailto:zdeng@math.fsu.edu?subject=MAT5939%20...%20">zdeng@math.fsu.edu</a></td>
-</tr>
+<tr><td class="left"><b>Time &amp; Place:</b></td><td class="left">Monday 18:45-20:00, LOV 102</td></tr>
+<tr><td class="left"><b>Instructor:</b></td><td class="left">Zhifeng Deng</td></tr>
+<tr><td class="left"><b>Office Hours:</b></td><td class="left">Monday/Tuesday 1:00-2:30 or by appointment</td></tr>
+<tr><td class="left"><b>Email:</b></td><td class="left"><a href="mailto:zdeng@math.fsu.edu?subject=MAT5939 ... ">zdeng@math.fsu.edu</a></td></tr>
 </tbody>
 </table>
+
 </div>
+
 </div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2">Resources</h2>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2"></span> Resources</h2>
 <div class="outline-text-2" id="text-2">
-</div><div id="outline-container-sec-2-1" class="outline-3">
-<h3 id="sec-2-1">Programming Language Guides</h3>
+
+
+</div>
+
+<div id="outline-container-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3"></span> Programming Language Guides</h3>
 <div class="outline-text-3" id="text-2-1">
-<ul class="org-ul">
+
+<ul>
 <li><a href="./resources/langs/cpp/">C++ guide</a> (<a href="./resources/langs/cpp/index.pdf">pdf</a>)
 </li>
 <li><a href="./resources/langs/fortran/">Fortran guide</a> (<a href="./resources/langs/fortran/index.pdf">pdf</a>)
 </li>
 </ul>
+
 </div>
+
 </div>
-<div id="outline-container-sec-2-2" class="outline-3">
-<h3 id="sec-2-2">Programming Assignment Resource</h3>
+
+<div id="outline-container-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3"></span> Programming Assignment Resource</h3>
 <div class="outline-text-3" id="text-2-2">
-<ul class="org-ul">
+
+<ul>
 <li><a href="./resources/prog/assignment-template.zip">Programming assignment template</a> (Read the README!)
 </li>
 <li><a href="./resources/prog/example-assignment.zip">Example programming assignment and solution</a>
 </li>
 </ul>
+
 </div>
+
 </div>
-<div id="outline-container-sec-2-3" class="outline-3">
-<h3 id="sec-2-3">Programming Environment Setup</h3>
+
+<div id="outline-container-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3"></span> Programming Environment Setup</h3>
 <div class="outline-text-3" id="text-2-3">
-<ul class="org-ul">
+
+<ul>
 <li><a href="./Linux.txt">Setup Windows Subsystem for Linux</a>
 </li>
 </ul>
-<p>
-Useful links: <a href="https://solarianprogrammer.com/2017/04/15/install-wsl-windows-subsystem-for-linux">Setup Subsystem</a>, <a href="https://solarianprogrammer.com/2017/04/16/windows-susbsystem-for-linux-xfce-4">Setup GUI</a>
-</p>
+
+<p>Useful links: <a href="https://solarianprogrammer.com/2017/04/15/install-wsl-windows-subsystem-for-linux">Setup Subsystem</a>, <a href="https://solarianprogrammer.com/2017/04/16/windows-susbsystem-for-linux-xfce-4">Setup GUI</a>
+</p></div>
 </div>
+
 </div>
-</div>
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3">Assignments</h2>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2"></span> Assignments</h2>
 <div class="outline-text-2" id="text-3">
+
+
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="center" />
-
-<col  class="left" />
+<colgroup><col class="center" /><col class="left" />
 </colgroup>
 <thead>
-<tr>
-<th scope="col" class="center">Due Time</th>
-<th scope="col" class="left">Assignment</th>
-</tr>
+<tr><th scope="col" class="center">Due Time</th><th scope="col" class="left">Assignment</th></tr>
 </thead>
 <tbody>
-<tr>
-<td class="center">1 <span class="timestamp-wrapper"><span class="timestamp">&lt;2019-08-26 Mon&gt;</span></span></td>
-<td class="left">1. Read the Programming assignment resources carefully.</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">2. Install g++ or other compiler you prefer, create and compile helloworld.cpp.</td>
-</tr>
+<tr><td class="center">1 <span class="timestamp-wrapper"> <span class="timestamp">2019-08-26 Mon</span></span></td><td class="left">1. Read the Programming assignment resources carefully.</td></tr>
+<tr><td class="center"></td><td class="left">2. Install g++ or other compiler you prefer, create and compile helloworld.cpp.</td></tr>
 </tbody>
 <tbody>
-<tr>
-<td class="center">2 <span class="timestamp-wrapper"><span class="timestamp">&lt;2019-09-16 Mon&gt;</span></span></td>
-<td class="left">Summation.</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="center">Assignment 1</td>
-<td class="left">Consider the Taylor series $$\cos(x)=\sum_{k=0}^{\infty}\frac{(-1)^kx^{2k}}{(2k)!}.$$</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">Write a routine to evaluate \(\cos(x)\) with the following truncated serise:</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">$$s_n=\sum_{k=1}^n\frac{(-1)^kx^{2k}}{(2k)!}$$</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">in single precision at \(x=1.5708\).</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">You should determine the truncation \(n\) by bounding the relative error</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">$$\lvert (s_n-\cos(x))/\cos(x)\rvert$$</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">under threshold <code>RelTol</code>. Generate the exact answer, \(\cos(x)\), the exact</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">truncated sum, \(s_n\) and the exact series in double precision.</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">NOTE: Computation done in double precision is consider exact w.r.t single precision.</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">You routine should evaluate the sum, \(\hat{s}_n\), in different strategies:</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">1. Accumulate in decreasing order of the magnitude.</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">2. Accumulate in increasing order of the magnitude.</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">3. Accumulate the positive and nagative parts in decreasing order of magnitude separately.</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">4. Accumulate the positive and nagative parts in increasing order of magnitude separately.</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">Check the final error you achieved \(\lvert(\hat{s}_n-\cos(x))/\cos(x) \rvert\) as well as</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">the error w.r.t to the truncated sum \(\lvert (\hat{s}_n-s_n)/s_n \rvert\). Discuss your observation.</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">Do you find certain strategies under certain <code>RelTol</code> perform terrible? In what sense?</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="center">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
+<tr><td class="center">2 <span class="timestamp-wrapper"> <span class="timestamp">2019-09-16 Mon</span></span></td><td class="left">Summation.</td></tr>
+<tr><td class="center">Assignment 2</td><td class="left">Consider the Taylor series $$\cos(x)=\sum_{k=0}^{\infty}\frac{(-1)^kx^{2k}}{(2k)!}.$$</td></tr>
+<tr><td class="center"></td><td class="left">Write a routine to evaluate \(\cos(x)\) with the following truncated serise:</td></tr>
+<tr><td class="center"></td><td class="left">$$s_n=\sum_{k=1}^n\frac{(-1)^kx^{2k}}{(2k)!}$$</td></tr>
+<tr><td class="center"></td><td class="left">in single precision at \(x=1.5708\).</td></tr>
+<tr><td class="center"></td><td class="left">You should determine the truncation \(n\) by bounding the relative error</td></tr>
+<tr><td class="center"></td><td class="left">$$\lvert (s_n-\cos(x))/\cos(x)\rvert$$</td></tr>
+<tr><td class="center"></td><td class="left">under threshold <code>RelTol</code>. Generate the exact answer, \(\cos(x)\), the exact</td></tr>
+<tr><td class="center"></td><td class="left">truncated sum, \(s_n\) and the exact series in double precision.</td></tr>
+<tr><td class="center"></td><td class="left">NOTE: Computation done in double precision is consider exact w.r.t single precision.</td></tr>
+<tr><td class="center"></td><td class="left">You routine should evaluate the sum, \(\hat{s}_n\), in different strategies:</td></tr>
+<tr><td class="center"></td><td class="left">1. Accumulate in decreasing order of the magnitude.</td></tr>
+<tr><td class="center"></td><td class="left">2. Accumulate in increasing order of the magnitude.</td></tr>
+<tr><td class="center"></td><td class="left">3. Accumulate the positive and nagative parts in decreasing order of magnitude separately.</td></tr>
+<tr><td class="center"></td><td class="left">4. Accumulate the positive and nagative parts in increasing order of magnitude separately.</td></tr>
+<tr><td class="center"></td><td class="left">Check the final error you achieved \(\lvert(\hat{s}_n-\cos(x))/\cos(x) \rvert\) as well as</td></tr>
+<tr><td class="center"></td><td class="left">the error w.r.t to the truncated sum \(\lvert (\hat{s}_n-s_n)/s_n \rvert\). Discuss your observation.</td></tr>
+<tr><td class="center"></td><td class="left">Do you find certain strategies under certain <code>RelTol</code> perform terrible? In what sense?</td></tr>
+</tbody>
+<tbody>
+<tr><td class="center">3 <span class="timestamp-wrapper"> <span class="timestamp">2019-09-30 Mon</span></span></td><td class="left">Newton method.</td></tr>
+<tr><td class="center">Assignemnt 3</td><td class="left">Implement Newton method, i.e., the iteration</td></tr>
+<tr><td class="center"></td><td class="left">$$x_{k+1}=x_k-\frac{f(x_k)}{f'(x_{k+1})}$$</td></tr>
+<tr><td class="center"></td><td class="left">to solve the problem</td></tr>
+<tr><td class="center"></td><td class="left">$$x^3-x+0.384900179$$</td></tr>
+<tr><td class="center"></td><td class="left">in IEEE double precision system.</td></tr>
+<tr><td class="center"></td><td class="left">Your routine should terminate when \(x_{k+1}\) gets no update, i.e. \(x_{k+1}=x_{k}\). Use the last</td></tr>
+<tr><td class="center"></td><td class="left">\(x_{k}\) as the true solution \(x_*\), i.e. \(x_*=x_{k_{max}}\). Do the log-log plot of $</td></tr>
+<tr><td class="center"></td><td class="left">\(\lvert x_k-x_*\rvert\) vs \(k\). Comment on the quadratic behavior and possibly some outliers.</td></tr>
+<tr><td class="center"></td><td class="left">Note that in this simple case, you may not obtain a nice straight line to indicate the convergence</td></tr>
+<tr><td class="center"></td><td class="left">rate. Since quadratic convergence in 1 dimension problem is way too fast. The convergent sequence</td></tr>
+<tr><td class="center"></td><td class="left">is short and the numeric error comes in too early. However, you can still comment on the magnitude,</td></tr>
+<tr><td class="center"></td><td class="left">which indicates quadratic convergence.</td></tr>
 </tbody>
 </table>
+
+
+
+
+
 </div>
+
 </div>
 
-
-
-
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4">Anouncements</h2>
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2"></span> Anouncements</h2>
 <div class="outline-text-2" id="text-4">
+
+
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="left" />
-
-<col  class="left" />
+<colgroup><col class="left" /><col class="left" />
 </colgroup>
 <thead>
-<tr>
-<th scope="col" class="left">Date</th>
-<th scope="col" class="left">Announcement</th>
-</tr>
+<tr><th scope="col" class="left">Date</th><th scope="col" class="left">Announcement</th></tr>
 </thead>
 <tbody>
-<tr>
-<td class="left"><span class="timestamp-wrapper"><span class="timestamp">&lt;2019-09-07 Sat&gt;</span></span></td>
-<td class="left">The due day of assignment 1 corrected.</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="left">&#xa0;</td>
-</tr>
+<tr><td class="left"><span class="timestamp-wrapper"> <span class="timestamp">2019-09-07 Sat</span></span></td><td class="left">The due day of assignment 1 corrected.</td></tr>
 </tbody>
 </table>
 
 
+
+
+</div>
+
+
+
 </div>
 </div>
 </div>
+
+<div id="postamble">
+<p class="date">Date: 2019-09-19T00:27-0400</p>
+<p class="author">Author: Zhifeng Deng</p>
+<p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
 </div>
 </body>
 </html>
