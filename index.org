@@ -64,16 +64,16 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 | Assignemnt 3       | Implement Newton method, i.e., the iteration                                                        |
 |                    | $$x_{k+1}=x_k-\frac{f(x_k)}{f'(x_{k+1})}$$                                                          |
 |                    | to solve the problem                                                                                |
-|                    | $$x^3-x+0.384900179$$                                                                               |
+|                    | $$x^3-x+0.384900179=0$$                                                                             |
 |                    | in IEEE double precision system.                                                                    |
 |                    |                                                                                                     |
 |                    | Your routine should terminate when $x_{k+1}$ gets no update, i.e. $x_{k+1}=x_{k}$. Use the last     |
-|                    | $x_{k}$ as the true solution $x_*$, i.e. $x_*=x_{k_{max}}$. Do the log-log plot of $                |
+|                    | $x_{k}$ as the true solution $x_*$, i.e. $x_*=x_{k_{\max}}$. Do the log-log plot of                 |
 |                    | $\lvert x_k-x_*\rvert$ vs $k$. Comment on the quadratic behavior and possibly some outliers.        |
 |                    |                                                                                                     |
-|                    | Note that in this simple case, you may not obtain a nice straight line to indicate the convergence  |
-|                    | rate. Since quadratic convergence in 1 dimension problem is way too fast. The convergent sequence   |
-|                    | is short and the numeric error comes in too early. However, you can still comment on the magnitude, |
+|                    | Note that in this simple case, you may not obtain a nice straight line for convergent order.        |
+|                    | Quadratic convergence in 1 dimension problem is way too fast therefore convergent sequence          |
+|                    | is short and the numeric error comes in too early. However, you can still comment on magnitude,     |
 |                    | which indicates quadratic convergence.                                                              |
 |                    |                                                                                                     |
 |--------------------+-----------------------------------------------------------------------------------------------------|
