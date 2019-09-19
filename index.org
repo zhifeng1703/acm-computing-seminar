@@ -73,7 +73,7 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 |                    |                                                                                                     |
 |                    | Note that in this simple case, you may not obtain a nice straight line for convergent order.        |
 |                    | Quadratic convergence in 1 dimension problem is way too fast therefore convergent sequence          |
-|                    | is short and the numeric error comes in too early. However, you can still comment on magnitude,     |
+|                    | is short and the numeric error comes in too early. You can still comment on magnitude,              |
 |                    | which indicates quadratic convergence.                                                              |
 |                    |                                                                                                     |
 |--------------------+-----------------------------------------------------------------------------------------------------|
