@@ -37,7 +37,7 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 | Assignment 2       | Consider the Taylor series $$\cos(x)=\sum_{k=0}^{\infty}\frac{(-1)^kx^{2k}}{(2k)!}.$$               |
 |                    |                                                                                                     |
 |                    | Write a routine to evaluate $\cos(x)$ with the following truncated serise:                          |
-|                    | $$s_n=\sum_{k=1}^n\frac{(-1)^kx^{2k}}{(2k)!}$$                                                      |
+|                    | $$s_n=\sum_{k=0}^n\frac{(-1)^kx^{2k}}{(2k)!}$$                                                      |
 |                    | in single precision at $x=1.5708$.                                                                  |
 |                    |                                                                                                     |
 |                    | You should determine the truncation $n$ by bounding the relative error                              |
