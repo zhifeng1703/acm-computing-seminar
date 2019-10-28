@@ -77,6 +77,14 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 |                    | which indicates quadratic convergence.                                                              |
 |                    |                                                                                                     |
 |--------------------+-----------------------------------------------------------------------------------------------------|
+| <2019-11-11 Mon>   | Implement a column-major matrix class with element accessor, column array accessor and overloaded   |
+| Assignment 4       | operator << for outputing.                                                                          |
+|                    | Compute the $p$-norm of the columns of a 5 by 6 matrix, whose entries take random value in $[0,1]$, |
+|                    | with $p=1,1.5,2$.                                                                                   |
+|                    | Your norm routine should be generic for arbitrary standard array in C++. A typical implemtation is  |
+|                    | =template<class T>=                                                                                 |
+|                    | =T norm(T* data, int length, int p)=                                                                |
+|--------------------+-----------------------------------------------------------------------------------------------------|
 
 
 
