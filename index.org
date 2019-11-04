@@ -99,6 +99,8 @@ Useful links: [[https://solarianprogrammer.com/2017/04/15/install-wsl-windows-su
 |------------------+---------------------------------------------------|
 | <2019-09-25 Wed> | The Julia code of assignment 1 is posted in [[/resources/solution/Assignment1.jl][here]]. |
 |------------------+---------------------------------------------------|
+| <2019-11-04 Mon> | The row-major matrix class is posted in [[./resources/Matrix.zip][here]].     |
+|------------------+---------------------------------------------------|
 
 #+html: </div>
 
